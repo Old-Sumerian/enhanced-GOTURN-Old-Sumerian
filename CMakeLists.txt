@@ -3,3 +3,6 @@ project(mygoturn)
 
 set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -std=c++11")
 find_package(Boost COMPONENTS system filesystem regex REQUIRED)
+
+# avoid "can not find -lopencv_dep_cudart"
+set(CUDA_USE_STATIC_CUDA_RUNTIME O
