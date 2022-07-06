@@ -8,4 +8,7 @@ find_package(Boost COMPONENTS system filesystem regex REQUIRED)
 set(CUDA_USE_STATIC_CUDA_RUNTIME OFF)
 
 find_package( OpenCV REQUIRED )
-message("Open CV version is ${OpenCV_VERSION}"
+message("Open CV version is ${OpenCV_VERSION}")
+
+set(Caffe_DIR ~/tracking/GOTURN/caffe)
+find_package(Caffe REQUIR
