@@ -11,4 +11,6 @@ find_package( OpenCV REQUIRED )
 message("Open CV version is ${OpenCV_VERSION}")
 
 set(Caffe_DIR ~/tracking/GOTURN/caffe)
-find_package(Caffe REQUIR
+find_package(Caffe REQUIRED)
+include_directories(${Caffe_INCLUDE_DIRS})
+add_definitions(${Caffe_DEFINITIONS
