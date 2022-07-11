@@ -13,4 +13,7 @@ message("Open CV version is ${OpenCV_VERSION}")
 set(Caffe_DIR ~/tracking/GOTURN/caffe)
 find_package(Caffe REQUIRED)
 include_directories(${Caffe_INCLUDE_DIRS})
-add_definitions(${Caffe_DEFINITIONS
+add_definitions(${Caffe_DEFINITIONS})    # ex. -DCPU_ONLY
+message("Caffe_DIR is ${Caffe_DIR}")
+
+set(CMAKE_RUNTIME
