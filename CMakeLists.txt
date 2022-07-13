@@ -18,4 +18,7 @@ message("Caffe_DIR is ${Caffe_DIR}")
 
 set(CMAKE_RUNTIME_OUTPUT_DIRECTORY "${CMAKE_CURRENT_SOURCE_DIR}/bin")
 
-add_library (${PRO
+add_library (${PROJECT_NAME}
+
+        src/network/regressor.cpp
+        src/network/regressor_bas
