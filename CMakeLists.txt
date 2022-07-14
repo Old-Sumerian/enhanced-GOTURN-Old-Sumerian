@@ -24,4 +24,8 @@ add_library (${PROJECT_NAME}
         src/network/regressor_base.cpp
         src/tracker/tracker.cpp
         src/helper/helper.cpp
-        src/hel
+        src/helper/bounding_box.cpp
+        src/helper/image_proc.cpp
+
+        src/network/regressor.h
+     
