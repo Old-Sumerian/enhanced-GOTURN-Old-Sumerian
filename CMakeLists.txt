@@ -21,4 +21,7 @@ set(CMAKE_RUNTIME_OUTPUT_DIRECTORY "${CMAKE_CURRENT_SOURCE_DIR}/bin")
 add_library (${PROJECT_NAME}
 
         src/network/regressor.cpp
-        src/network/regressor_bas
+        src/network/regressor_base.cpp
+        src/tracker/tracker.cpp
+        src/helper/helper.cpp
+        src/hel
