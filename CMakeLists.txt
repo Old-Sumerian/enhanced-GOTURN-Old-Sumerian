@@ -28,4 +28,6 @@ add_library (${PROJECT_NAME}
         src/helper/image_proc.cpp
 
         src/network/regressor.h
-     
+        src/network/regressor_base.h
+        src/tracker/tracker.h
+        src/hel
