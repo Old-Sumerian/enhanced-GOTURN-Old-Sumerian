@@ -30,4 +30,6 @@ add_library (${PROJECT_NAME}
         src/network/regressor.h
         src/network/regressor_base.h
         src/tracker/tracker.h
-        src/hel
+        src/helper/helper.h
+        src/helper/bounding_box.h
+        src/helper
