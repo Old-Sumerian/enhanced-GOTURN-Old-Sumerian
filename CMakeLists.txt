@@ -32,4 +32,9 @@ add_library (${PROJECT_NAME}
         src/tracker/tracker.h
         src/helper/helper.h
         src/helper/bounding_box.h
-        src/helper
+        src/helper/image_proc.h
+       )
+
+include_directories(src)
+
+set(SOURCE_FILES src/visu
