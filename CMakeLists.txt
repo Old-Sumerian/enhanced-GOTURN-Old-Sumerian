@@ -37,4 +37,5 @@ add_library (${PROJECT_NAME}
 
 include_directories(src)
 
-set(SOURCE_FILES src/visu
+set(SOURCE_FILES src/visualizer/runTracker.cpp src/loader/loader_base.cpp src/loader/loader_base.h)
+add_executable
