@@ -38,4 +38,5 @@ add_library (${PROJECT_NAME}
 include_directories(src)
 
 set(SOURCE_FILES src/visualizer/runTracker.cpp src/loader/loader_base.cpp src/loader/loader_base.h)
-add_executable
+add_executable(runTracker ${SOURCE_FILES})
+target_link_libraries(${PROJECT_NAME} ${Op
