@@ -1,0 +1,5 @@
+name: "CaffeNet"
+
+input: "target"
+input: "image"
+input: "b

@@ -40,4 +40,4 @@ include_directories(src)
 set(SOURCE_FILES src/visualizer/runTracker.cpp src/loader/loader_base.cpp src/loader/loader_base.h)
 add_executable(runTracker ${SOURCE_FILES})
 target_link_libraries(${PROJECT_NAME} ${OpenCV_LIBS} ${Caffe_LIBRARIES} ${Boost_LIBRARIES})
-target_link_libraries (runTracker ${PROJ
+target_link_libraries (runTracker ${PROJECT_NAME})
