@@ -24,4 +24,10 @@ input_dim: 1
 
 layer {
   name: "conv1"
-  type:
+  type: "Convolution"
+  bottom: "target"
+  top: "conv1"
+  param {
+    lr_mult: 0
+    decay_mult: 1
+ 
