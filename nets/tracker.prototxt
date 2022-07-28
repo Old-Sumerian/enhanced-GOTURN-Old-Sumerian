@@ -40,4 +40,11 @@ layer {
     kernel_size: 11
     stride: 4
     weight_filler {
-      type: "gauss
+      type: "gaussian"
+      std: 0.01
+    }
+    bias_filler {
+      type: "constant"
+      value: 0
+    }
+  }
