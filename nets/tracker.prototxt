@@ -55,3 +55,9 @@ layer {
   bottom: "conv1"
   top: "conv1"
 }
+layer {
+  name: "pool1"
+  type: "Pooling"
+  bottom: "conv1"
+  top: "pool1"
+  pooling_p
