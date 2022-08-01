@@ -60,4 +60,11 @@ layer {
   type: "Pooling"
   bottom: "conv1"
   top: "pool1"
-  pooling_p
+  pooling_param {
+    pool: MAX
+    kernel_size: 3
+    stride: 2
+  }
+}
+layer {
+  name: 
