@@ -67,4 +67,10 @@ layer {
   }
 }
 layer {
-  name: 
+  name: "norm1"
+  type: "LRN"
+  bottom: "pool1"
+  top: "norm1"
+  lrn_param {
+    local_size: 5
+    alph
