@@ -80,4 +80,11 @@ layer {
 layer {
   name: "conv2"
   type: "Convolution"
-  b
+  bottom: "norm1"
+  top: "conv2"
+  param {
+    lr_mult: 0
+    decay_mult: 1
+  }
+  param {
+    l
