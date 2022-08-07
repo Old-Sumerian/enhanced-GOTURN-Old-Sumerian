@@ -92,4 +92,8 @@ layer {
   }
   convolution_param {
     num_output: 256
-    p
+    pad: 2
+    kernel_size: 5
+    group: 2
+    weight_filler {
+      type: "gaussi
