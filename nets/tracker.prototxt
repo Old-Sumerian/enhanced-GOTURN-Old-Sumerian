@@ -112,4 +112,9 @@ layer {
   top: "conv2"
 }
 layer {
-  n
+  name: "pool2"
+  type: "Pooling"
+  bottom: "conv2"
+  top: "pool2"
+  pooling_param {
+  
