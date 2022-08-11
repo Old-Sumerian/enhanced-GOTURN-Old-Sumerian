@@ -117,4 +117,11 @@ layer {
   bottom: "conv2"
   top: "pool2"
   pooling_param {
-  
+    pool: MAX
+    kernel_size: 3
+    stride: 2
+  }
+}
+layer {
+  name: "norm2"
+  type:
