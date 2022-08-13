@@ -129,4 +129,11 @@ layer {
   top: "norm2"
   lrn_param {
     local_size: 5
-    alpha:
+    alpha: 0.0001
+    beta: 0.75
+  }
+}
+layer {
+  name: "conv3"
+  type: "Convolution"
+  bottom: "norm
