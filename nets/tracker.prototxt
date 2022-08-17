@@ -142,4 +142,11 @@ layer {
     lr_mult: 0
     decay_mult: 1
   }
-  pa
+  param {
+    lr_mult: 0
+    decay_mult: 0
+  }
+  convolution_param {
+    num_output: 384
+    pad: 1
+   
