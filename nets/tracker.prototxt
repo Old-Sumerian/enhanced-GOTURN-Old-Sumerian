@@ -149,4 +149,8 @@ layer {
   convolution_param {
     num_output: 384
     pad: 1
-   
+    kernel_size: 3
+    weight_filler {
+      type: "gaussian"
+      std: 0.01
+  
