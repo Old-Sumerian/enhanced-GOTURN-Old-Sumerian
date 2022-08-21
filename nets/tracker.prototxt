@@ -161,4 +161,10 @@ layer {
   }
 }
 layer {
-  na
+  name: "relu3"
+  type: "ReLU"
+  bottom: "conv3"
+  top: "conv3"
+}
+layer {
+  name:
