@@ -167,4 +167,10 @@ layer {
   top: "conv3"
 }
 layer {
-  name:
+  name: "conv4"
+  type: "Convolution"
+  bottom: "conv3"
+  top: "conv4"
+  param {
+    lr_mult: 0
+    decay_
