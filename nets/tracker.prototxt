@@ -173,4 +173,10 @@ layer {
   top: "conv4"
   param {
     lr_mult: 0
-    decay_
+    decay_mult: 1
+  }
+  param {
+    lr_mult: 0
+    decay_mult: 0
+  }
+  convolution_param 
