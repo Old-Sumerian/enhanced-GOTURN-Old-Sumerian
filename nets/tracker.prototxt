@@ -184,4 +184,9 @@ layer {
     pad: 1
     kernel_size: 3
     group: 2
-    
+    weight_filler {
+      type: "gaussian"
+      std: 0.01
+    }
+    bias_filler {
+     
