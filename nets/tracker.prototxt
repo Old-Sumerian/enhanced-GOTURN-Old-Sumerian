@@ -189,4 +189,12 @@ layer {
       std: 0.01
     }
     bias_filler {
-     
+      type: "constant"
+      value: 1
+    }
+  }
+}
+layer {
+  name: "relu4"
+  type: "ReLU"
+ 
