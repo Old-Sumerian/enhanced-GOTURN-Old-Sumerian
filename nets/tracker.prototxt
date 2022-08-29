@@ -197,4 +197,10 @@ layer {
 layer {
   name: "relu4"
   type: "ReLU"
- 
+  bottom: "conv4"
+  top: "conv4"
+}
+layer {
+  name: "conv5"
+  type: "Convolution"
+  b
