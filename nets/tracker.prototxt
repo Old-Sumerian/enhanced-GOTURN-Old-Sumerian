@@ -203,4 +203,10 @@ layer {
 layer {
   name: "conv5"
   type: "Convolution"
-  b
+  bottom: "conv4"
+  top: "conv5"
+  param {
+    lr_mult: 0
+    decay_mult: 1
+  }
+ 
