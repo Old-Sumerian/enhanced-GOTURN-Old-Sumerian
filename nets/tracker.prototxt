@@ -219,4 +219,9 @@ layer {
     kernel_size: 3
     group: 2
     weight_filler {
-      typ
+      type: "gaussian"
+      std: 0.01
+    }
+    bias_filler {
+      type: "constant"
+      value: 
