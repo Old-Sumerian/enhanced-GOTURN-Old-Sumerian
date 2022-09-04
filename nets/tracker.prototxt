@@ -214,4 +214,9 @@ layer {
     decay_mult: 0
   }
   convolution_param {
-    n
+    num_output: 256
+    pad: 1
+    kernel_size: 3
+    group: 2
+    weight_filler {
+      typ
