@@ -234,3 +234,9 @@ layer {
   bottom: "conv5"
   top: "conv5"
 }
+layer {
+  name: "pool5"
+  type: "Pooling"
+  bottom: "conv5"
+  top: "pool5"
+  poo
