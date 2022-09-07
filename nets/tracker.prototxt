@@ -224,4 +224,13 @@ layer {
     }
     bias_filler {
       type: "constant"
-      value: 
+      value: 1
+    }
+  }
+}
+layer {
+  name: "relu5"
+  type: "ReLU"
+  bottom: "conv5"
+  top: "conv5"
+}
