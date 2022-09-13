@@ -239,4 +239,11 @@ layer {
   type: "Pooling"
   bottom: "conv5"
   top: "pool5"
-  poo
+  pooling_param {
+    pool: MAX
+    kernel_size: 3
+    stride: 2
+  }
+}
+
+layer
