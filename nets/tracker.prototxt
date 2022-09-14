@@ -251,4 +251,12 @@ layer {
   type: "Convolution"
   bottom: "image"
   top: "conv1_p"
-  par
+  param {
+    lr_mult: 0
+    decay_mult: 1
+  }
+  param {
+    lr_mult: 0
+    decay_mult: 0
+  }
+  co
