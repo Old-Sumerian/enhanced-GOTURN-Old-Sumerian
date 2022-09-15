@@ -259,4 +259,8 @@ layer {
     lr_mult: 0
     decay_mult: 0
   }
-  co
+  convolution_param {
+    num_output: 96
+    kernel_size: 11
+    stride: 4
+    weight_fille
