@@ -263,4 +263,9 @@ layer {
     num_output: 96
     kernel_size: 11
     stride: 4
-    weight_fille
+    weight_filler {
+      type: "gaussian"
+      std: 0.01
+    }
+    bias_filler {
+      
