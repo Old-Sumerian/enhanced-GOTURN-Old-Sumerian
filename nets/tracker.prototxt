@@ -268,4 +268,11 @@ layer {
       std: 0.01
     }
     bias_filler {
-      
+      type: "constant"
+      value: 0
+    }
+  }
+}
+layer {
+  name: "relu1_p"
+  type: "ReLU"
