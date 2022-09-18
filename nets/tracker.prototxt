@@ -276,3 +276,10 @@ layer {
 layer {
   name: "relu1_p"
   type: "ReLU"
+  bottom: "conv1_p"
+  top: "conv1_p"
+}
+layer {
+  name: "pool1_p"
+  type: "Pooling"
+  bottom: "co
