@@ -282,4 +282,9 @@ layer {
 layer {
   name: "pool1_p"
   type: "Pooling"
-  bottom: "co
+  bottom: "conv1_p"
+  top: "pool1_p"
+  pooling_param {
+    pool: MAX
+    kernel_size: 3
+    s
