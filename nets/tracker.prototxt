@@ -287,4 +287,10 @@ layer {
   pooling_param {
     pool: MAX
     kernel_size: 3
-    s
+    stride: 2
+  }
+}
+layer {
+  name: "norm1_p"
+  type: "LRN"
+  bottom:
