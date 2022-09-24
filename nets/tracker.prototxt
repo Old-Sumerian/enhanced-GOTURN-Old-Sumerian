@@ -293,4 +293,9 @@ layer {
 layer {
   name: "norm1_p"
   type: "LRN"
-  bottom:
+  bottom: "pool1_p"
+  top: "norm1_p"
+  lrn_param {
+    local_size: 5
+    alpha: 0.0001
+ 
