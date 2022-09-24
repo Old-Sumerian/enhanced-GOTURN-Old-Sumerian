@@ -298,4 +298,11 @@ layer {
   lrn_param {
     local_size: 5
     alpha: 0.0001
- 
+    beta: 0.75
+  }
+}
+layer {
+  name: "conv2_p"
+  type: "Convolution"
+  bottom: "norm1_p"
+  top: "c
