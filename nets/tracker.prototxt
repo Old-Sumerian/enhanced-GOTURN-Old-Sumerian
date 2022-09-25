@@ -305,4 +305,11 @@ layer {
   name: "conv2_p"
   type: "Convolution"
   bottom: "norm1_p"
-  top: "c
+  top: "conv2_p"
+  param {
+    lr_mult: 0
+    decay_mult: 1
+  }
+  param {
+    lr_mult: 0
+   
