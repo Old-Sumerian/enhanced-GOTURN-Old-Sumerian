@@ -330,3 +330,8 @@ layer {
   }
 }
 layer {
+  name: "relu2_p"
+  type: "ReLU"
+  bottom: "conv2_p"
+  top: "conv2_p"
+}
