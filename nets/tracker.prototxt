@@ -347,4 +347,9 @@ layer {
   }
 }
 layer {
-  nam
+  name: "norm2_p"
+  type: "LRN"
+  bottom: "pool2_p"
+  top: "norm2_p"
+  lrn_param {
+ 
