@@ -340,3 +340,11 @@ layer {
   type: "Pooling"
   bottom: "conv2_p"
   top: "pool2_p"
+  pooling_param {
+    pool: MAX
+    kernel_size: 3
+    stride: 2
+  }
+}
+layer {
+  nam
