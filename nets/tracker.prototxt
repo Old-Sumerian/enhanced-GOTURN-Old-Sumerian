@@ -352,4 +352,10 @@ layer {
   bottom: "pool2_p"
   top: "norm2_p"
   lrn_param {
- 
+    local_size: 5
+    alpha: 0.0001
+    beta: 0.75
+  }
+}
+layer {
+  name: "conv
