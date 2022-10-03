@@ -358,4 +358,9 @@ layer {
   }
 }
 layer {
-  name: "conv
+  name: "conv3_p"
+  type: "Convolution"
+  bottom: "norm2_p"
+  top: "conv3_p"
+  param {
+    lr_
