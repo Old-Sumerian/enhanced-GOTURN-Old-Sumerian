@@ -363,4 +363,9 @@ layer {
   bottom: "norm2_p"
   top: "conv3_p"
   param {
-    lr_
+    lr_mult: 0
+    decay_mult: 1
+  }
+  param {
+    lr_mult: 0
+    decay_mult: 
