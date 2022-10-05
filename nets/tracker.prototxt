@@ -368,4 +368,9 @@ layer {
   }
   param {
     lr_mult: 0
-    decay_mult: 
+    decay_mult: 0
+  }
+  convolution_param {
+    num_output: 384
+    pad: 1
+    kernel_size:
