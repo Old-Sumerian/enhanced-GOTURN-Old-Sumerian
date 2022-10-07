@@ -378,4 +378,12 @@ layer {
       type: "gaussian"
       std: 0.01
     }
-    bias_fille
+    bias_filler {
+      type: "constant"
+      value: 0
+    }
+  }
+}
+layer {
+  name: "relu3_p"
+  type:
