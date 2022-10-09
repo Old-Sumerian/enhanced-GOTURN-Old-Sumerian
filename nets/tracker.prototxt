@@ -391,4 +391,10 @@ layer {
   top: "conv3_p"
 }
 layer {
-  name: "conv
+  name: "conv4_p"
+  type: "Convolution"
+  bottom: "conv3_p"
+  top: "conv4_p"
+  param {
+    lr_mult: 0
+    
