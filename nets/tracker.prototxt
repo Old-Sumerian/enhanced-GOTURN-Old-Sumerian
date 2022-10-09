@@ -386,4 +386,9 @@ layer {
 }
 layer {
   name: "relu3_p"
-  type:
+  type: "ReLU"
+  bottom: "conv3_p"
+  top: "conv3_p"
+}
+layer {
+  name: "conv
