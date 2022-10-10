@@ -397,4 +397,12 @@ layer {
   top: "conv4_p"
   param {
     lr_mult: 0
-    
+    decay_mult: 1
+  }
+  param {
+    lr_mult: 0
+    decay_mult: 0
+  }
+  convolution_param {
+    num_output: 384
+   
