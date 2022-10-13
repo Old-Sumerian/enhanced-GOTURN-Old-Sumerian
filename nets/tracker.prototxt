@@ -414,4 +414,11 @@ layer {
     }
     bias_filler {
       type: "constant"
-      value:
+      value: 1
+    }
+  }
+}
+layer {
+  name: "relu4_p"
+  type: "ReLU"
+  bottom: "conv4_p"
