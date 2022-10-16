@@ -427,4 +427,10 @@ layer {
 layer {
   name: "conv5_p"
   type: "Convolution"
-  botto
+  bottom: "conv4_p"
+  top: "conv5_p"
+  param {
+    lr_mult: 0
+    decay_mult: 1
+  }
+  param {
