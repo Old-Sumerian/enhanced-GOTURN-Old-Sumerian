@@ -464,4 +464,12 @@ layer {
   bottom: "conv5_p"
   top: "pool5_p"
   pooling_param {
-   
+    pool: MAX
+    kernel_size: 3
+    stride: 2
+  }
+}
+
+layer {
+  name: "concat"
+  type: "Con
