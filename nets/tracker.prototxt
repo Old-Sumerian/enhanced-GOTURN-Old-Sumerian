@@ -459,4 +459,9 @@ layer {
   top: "conv5_p"
 }
 layer {
-  name
+  name: "pool5_p"
+  type: "Pooling"
+  bottom: "conv5_p"
+  top: "pool5_p"
+  pooling_param {
+   
