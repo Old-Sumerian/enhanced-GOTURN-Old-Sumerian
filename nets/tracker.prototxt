@@ -472,4 +472,8 @@ layer {
 
 layer {
   name: "concat"
-  type: "Con
+  type: "Concat"
+  bottom: "pool5"
+  bottom: "pool5_p"
+  top: "pool5_concat"
+  concat_param 
