@@ -484,4 +484,10 @@ layer {
 layer {
   name: "fc6-new"
   type: "InnerProduct"
-  bott
+  bottom: "pool5_concat"
+  top: "fc6"
+  param {
+    lr_mult: 10
+    decay_mult: 1
+  }
+  param 
