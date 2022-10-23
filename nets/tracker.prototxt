@@ -476,4 +476,12 @@ layer {
   bottom: "pool5"
   bottom: "pool5_p"
   top: "pool5_concat"
-  concat_param 
+  concat_param {
+    axis: 1
+  }
+}
+
+layer {
+  name: "fc6-new"
+  type: "InnerProduct"
+  bott
