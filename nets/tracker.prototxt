@@ -508,4 +508,10 @@ layer {
 }
 layer {
   name: "relu6"
-  ty
+  type: "ReLU"
+  bottom: "fc6"
+  top: "fc6"
+}
+layer {
+  name: "drop6"
+  type: "Dropout"
