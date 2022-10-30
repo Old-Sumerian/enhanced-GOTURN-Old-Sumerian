@@ -522,4 +522,10 @@ layer {
   }
 }
 layer {
-  name:
+  name: "fc7-new"
+  type: "InnerProduct"
+  bottom: "fc6"
+  top: "fc7"
+  param {
+    lr_mult: 10
+    deca
