@@ -539,4 +539,11 @@ layer {
     weight_filler {
       type: "gaussian"
       std: 0.005
- 
+    }
+    bias_filler {
+      type: "constant"
+      value: 1
+    }
+  }
+}
+la
