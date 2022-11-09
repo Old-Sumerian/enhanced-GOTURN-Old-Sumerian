@@ -565,4 +565,10 @@ layer {
   name: "fc7-newb"
   type: "InnerProduct"
   bottom: "fc7"
-  top: "fc
+  top: "fc7b"
+  param {
+    lr_mult: 10
+    decay_mult: 1
+  }
+  param {
+    lr_mult: 
