@@ -594,3 +594,8 @@ layer {
 }
 layer {
   name: "drop7b"
+  type: "Dropout"
+  bottom: "fc7b"
+  top: "fc7b"
+  dropout_param {
+    dropout_ratio
