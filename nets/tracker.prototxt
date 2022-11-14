@@ -587,4 +587,10 @@ layer {
   }
 }
 layer {
-  name: "relu
+  name: "relu7b"
+  type: "ReLU"
+  bottom: "fc7b"
+  top: "fc7b"
+}
+layer {
+  name: "drop7b"
