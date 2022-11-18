@@ -606,4 +606,11 @@ layer {
 layer {
   name: "fc8-shapes"
   type: "InnerProduct"
-  bottom
+  bottom: "fc7b"
+  top: "fc8"
+  param {
+    lr_mult: 10
+    decay_mult: 1
+  }
+  param {
+    
