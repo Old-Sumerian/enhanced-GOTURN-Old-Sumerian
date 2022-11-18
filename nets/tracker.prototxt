@@ -598,4 +598,12 @@ layer {
   bottom: "fc7b"
   top: "fc7b"
   dropout_param {
-    dropout_ratio
+    dropout_ratio: 0.5
+  }
+}
+
+
+layer {
+  name: "fc8-shapes"
+  type: "InnerProduct"
+  bottom
