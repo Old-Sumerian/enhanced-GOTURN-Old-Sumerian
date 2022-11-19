@@ -618,4 +618,9 @@ layer {
   }
   inner_product_param {
     num_output: 4
-    weight_fi
+    weight_filler {
+      type: "gaussian"
+      std: 0.01
+    }
+    bias_filler {
+      type: "co
