@@ -623,4 +623,12 @@ layer {
       std: 0.01
     }
     bias_filler {
-      type: "co
+      type: "constant"
+      value: 0
+    }
+  }
+}
+
+layer {
+  name: "neg"
+  bottom: "bbox"
