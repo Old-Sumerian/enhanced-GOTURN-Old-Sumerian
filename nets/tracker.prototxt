@@ -632,3 +632,7 @@ layer {
 layer {
   name: "neg"
   bottom: "bbox"
+  top: "bbox_neg"
+  type: "Power"
+  power_param {
+    power: 
