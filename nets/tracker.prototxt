@@ -635,4 +635,11 @@ layer {
   top: "bbox_neg"
   type: "Power"
   power_param {
-    power: 
+    power: 1
+    scale: -1
+    shift: 0
+  }
+}
+layer {
+  name: "flatten"
+  type: "
