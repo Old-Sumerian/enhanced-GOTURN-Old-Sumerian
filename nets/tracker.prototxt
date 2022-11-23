@@ -642,4 +642,10 @@ layer {
 }
 layer {
   name: "flatten"
-  type: "
+  type: "Flatten"
+  bottom: "bbox_neg"
+  top: "bbox_neg_flat"
+}
+
+layer {
+  name: "subtra
