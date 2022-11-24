@@ -654,4 +654,9 @@ layer {
   bottom: "bbox_neg_flat"
   top: "out_diff"
 }
-layer
+layer {
+  name: "abssum"
+  type: "Reduction"
+  bottom: "out_diff"
+  top: "loss"
+  loss_we
