@@ -648,4 +648,10 @@ layer {
 }
 
 layer {
-  name: "subtra
+  name: "subtract"
+  type: "Eltwise"
+  bottom: "fc8"
+  bottom: "bbox_neg_flat"
+  top: "out_diff"
+}
+layer
