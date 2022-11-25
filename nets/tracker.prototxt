@@ -659,4 +659,9 @@ layer {
   type: "Reduction"
   bottom: "out_diff"
   top: "loss"
-  loss_we
+  loss_weight: 1
+  reduction_param {
+    operation: 2
+  }
+}
+
