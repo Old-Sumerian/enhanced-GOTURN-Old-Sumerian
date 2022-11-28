@@ -9,3 +9,7 @@
 #include "helper.h"
 
 // How much context to pad the image and target with (relative to the
+// bounding box size).
+const double kContextFactor = 2;
+
+// Factor by whic
