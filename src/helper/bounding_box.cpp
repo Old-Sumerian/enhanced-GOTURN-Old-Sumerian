@@ -14,4 +14,6 @@ const double kContextFactor = 2;
 
 // Factor by which to scale the bounding box coordinates, based on the
 // neural network default output range.
-c
+const double kScaleFactor = 10;
+
+// If true, the neural network will estimate the 
