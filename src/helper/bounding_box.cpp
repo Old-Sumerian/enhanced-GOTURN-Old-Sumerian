@@ -17,4 +17,4 @@ const double kContextFactor = 2;
 const double kScaleFactor = 10;
 
 // If true, the neural network will estimate the bounding box corners: (x1, y1, x2, y2)
-// If false, the neural network will 
+// If false, the neural network will estimate the bounding box center location and size: (center_x, center_y, width, heigh
