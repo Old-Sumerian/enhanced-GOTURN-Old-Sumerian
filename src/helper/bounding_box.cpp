@@ -21,4 +21,10 @@ const double kScaleFactor = 10;
 const bool use_coordinates_output = true;
 
 using namespace std;
-BoundingBox::
+BoundingBox::BoundingBox() :
+  scale_factor_(kScaleFactor)
+{
+}
+
+
+BoundingBox::Boundin
