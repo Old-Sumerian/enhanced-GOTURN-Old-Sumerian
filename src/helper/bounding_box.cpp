@@ -30,4 +30,5 @@ BoundingBox::BoundingBox() :
 BoundingBox::BoundingBox(const std::vector<float>& bounding_box)
   : scale_factor_(kScaleFactor)
 {
-  if 
+  if (bounding_box.size() != 4) {
+    printf("Error - bounding box vector
