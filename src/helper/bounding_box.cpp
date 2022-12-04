@@ -27,4 +27,7 @@ BoundingBox::BoundingBox() :
 }
 
 
-BoundingBox::Boundin
+BoundingBox::BoundingBox(const std::vector<float>& bounding_box)
+  : scale_factor_(kScaleFactor)
+{
+  if 
