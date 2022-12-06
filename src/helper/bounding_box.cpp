@@ -31,4 +31,8 @@ BoundingBox::BoundingBox(const std::vector<float>& bounding_box)
   : scale_factor_(kScaleFactor)
 {
   if (bounding_box.size() != 4) {
-    printf("Error - bounding box vector
+    printf("Error - bounding box vector has %zu elements\n",
+           bounding_box.size());
+  }
+
+  if (use_coordinates_
