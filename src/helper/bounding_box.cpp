@@ -38,3 +38,7 @@ BoundingBox::BoundingBox(const std::vector<float>& bounding_box)
   if (use_coordinates_output) {
     // Set bounding box coordinates.
     x1_ = bounding_box[0];
+    y1_ = bounding_box[1];
+    x2_ = bounding_box[2];
+    y2_ = bounding_box[3];
+ 
