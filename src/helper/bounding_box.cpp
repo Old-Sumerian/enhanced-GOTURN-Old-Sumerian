@@ -44,4 +44,6 @@ BoundingBox::BoundingBox(const std::vector<float>& bounding_box)
   } else {
     // Get bounding box in format: (center_x, center_y, width, height)
     const double center_x = bounding_box[0];
-    const double center_y = bound
+    const double center_y = bounding_box[1];
+    const double width = bounding_box[2];
+    const double height 
