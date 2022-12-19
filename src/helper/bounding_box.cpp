@@ -46,4 +46,6 @@ BoundingBox::BoundingBox(const std::vector<float>& bounding_box)
     const double center_x = bounding_box[0];
     const double center_y = bounding_box[1];
     const double width = bounding_box[2];
-    const double height 
+    const double height = bounding_box[3];
+
+    // Convert (center_x, center_y, width, height) to (x1, y
