@@ -51,4 +51,9 @@ BoundingBox::BoundingBox(const std::vector<float>& bounding_box)
     // Convert (center_x, center_y, width, height) to (x1, y1, x2, y2).
     x1_ = center_x - width / 2;
     y1_ = center_y - height / 2;
-    x
+    x2_ = center_x + width / 2;
+    y2_ = center_y + height / 2;
+  }
+}
+
+void BoundingBox::GetVector(std::vect
