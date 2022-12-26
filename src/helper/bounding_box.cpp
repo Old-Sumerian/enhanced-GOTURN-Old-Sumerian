@@ -58,4 +58,6 @@ BoundingBox::BoundingBox(const std::vector<float>& bounding_box)
 
 void BoundingBox::GetVector(std::vector<float>* bounding_box) const {
   if (use_coordinates_output) {
-    // Convert bounding b
+    // Convert bounding box into a vector format using (x1, y1, x2, y2).
+    bounding_box->push_back(x1_);
+ 
