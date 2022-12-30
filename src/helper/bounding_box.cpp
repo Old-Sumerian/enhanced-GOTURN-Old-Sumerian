@@ -64,4 +64,6 @@ void BoundingBox::GetVector(std::vector<float>* bounding_box) const {
     bounding_box->push_back(x2_);
     bounding_box->push_back(y2_);
   } else {
-    // Convert bounding box into a vector format using (center_x
+    // Convert bounding box into a vector format using (center_x, center_y, width, height).
+    bounding_box->push_back(get_center_x());
+    bound
