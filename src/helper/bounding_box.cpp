@@ -68,4 +68,9 @@ void BoundingBox::GetVector(std::vector<float>* bounding_box) const {
     bounding_box->push_back(get_center_x());
     bounding_box->push_back(get_center_y());
     bounding_box->push_back(get_width());
-    bounding_bo
+    bounding_box->push_back(get_height());
+  }
+}
+
+void BoundingBox::Print() const {
+  printf("Boun
