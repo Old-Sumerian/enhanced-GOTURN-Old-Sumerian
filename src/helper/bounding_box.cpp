@@ -73,4 +73,4 @@ void BoundingBox::GetVector(std::vector<float>* bounding_box) const {
 }
 
 void BoundingBox::Print() const {
-  printf("Boun
+  printf("Bounding box: x,y: %lf, %lf, %lf, %lf, w,h: %lf, %lf\n", x1_, y1_, x2_, y2_, get_width(), 
