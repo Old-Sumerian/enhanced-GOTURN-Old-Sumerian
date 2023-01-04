@@ -76,4 +76,8 @@ void BoundingBox::Print() const {
   printf("Bounding box: x,y: %lf, %lf, %lf, %lf, w,h: %lf, %lf\n", x1_, y1_, x2_, y2_, get_width(), get_height());
 }
 
-void BoundingBox::Scale(const cv::Mat& image, BoundingBox* bbox_scaled) 
+void BoundingBox::Scale(const cv::Mat& image, BoundingBox* bbox_scaled) const {
+  *bbox_scaled = *this;
+
+  const int width = image.cols;
+  const int hei
