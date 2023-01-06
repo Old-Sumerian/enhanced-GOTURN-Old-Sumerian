@@ -80,4 +80,6 @@ void BoundingBox::Scale(const cv::Mat& image, BoundingBox* bbox_scaled) const {
   *bbox_scaled = *this;
 
   const int width = image.cols;
-  const int hei
+  const int height = image.rows;
+
+  // Scale the bounding box so that the coordinates ran
