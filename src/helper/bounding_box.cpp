@@ -95,4 +95,7 @@ void BoundingBox::Scale(const cv::Mat& image, BoundingBox* bbox_scaled) const {
   bbox_scaled->y2_ *= scale_factor_;
 }
 
-void BoundingBox::U
+void BoundingBox::Unscale(const cv::Mat& image, BoundingBox* bbox_unscaled) const {
+  *bbox_unscaled = *this;
+
+  const 
