@@ -91,4 +91,8 @@ void BoundingBox::Scale(const cv::Mat& image, BoundingBox* bbox_scaled) const {
   // Scale the bounding box so that the coordinates range from 0 to scale_factor_.
   bbox_scaled->x1_ *= scale_factor_;
   bbox_scaled->x2_ *= scale_factor_;
-  bbox_scaled->y1_ *= scal
+  bbox_scaled->y1_ *= scale_factor_;
+  bbox_scaled->y2_ *= scale_factor_;
+}
+
+void BoundingBox::U
