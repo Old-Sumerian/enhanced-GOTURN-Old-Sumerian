@@ -98,4 +98,7 @@ void BoundingBox::Scale(const cv::Mat& image, BoundingBox* bbox_scaled) const {
 void BoundingBox::Unscale(const cv::Mat& image, BoundingBox* bbox_unscaled) const {
   *bbox_unscaled = *this;
 
-  const 
+  const int image_width = image.cols;
+  const int image_height = image.rows;
+
+  // Unscale the 
