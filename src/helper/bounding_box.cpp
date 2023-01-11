@@ -101,4 +101,5 @@ void BoundingBox::Unscale(const cv::Mat& image, BoundingBox* bbox_unscaled) cons
   const int image_width = image.cols;
   const int image_height = image.rows;
 
-  // Unscale the 
+  // Unscale the bounding box so that the coordinates range from 0 to 1.
+  bbox_unscal
