@@ -109,4 +109,6 @@ void BoundingBox::Unscale(const cv::Mat& image, BoundingBox* bbox_unscaled) cons
 
   // Unscale the bounding box so that the coordinates match the original image coordinates
   // (undoing the effect from the Scale method).
-  bbox_u
+  bbox_unscaled->x1_ *= image_width;
+  bbox_unscaled->y1_ *= image_height;
+  bbox_unscaled
