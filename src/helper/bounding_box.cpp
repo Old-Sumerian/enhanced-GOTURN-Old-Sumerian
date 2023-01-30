@@ -111,4 +111,8 @@ void BoundingBox::Unscale(const cv::Mat& image, BoundingBox* bbox_unscaled) cons
   // (undoing the effect from the Scale method).
   bbox_unscaled->x1_ *= image_width;
   bbox_unscaled->y1_ *= image_height;
-  bbox_unscaled
+  bbox_unscaled->x2_ *= image_width;
+  bbox_unscaled->y2_ *= image_height;
+}
+
+double
