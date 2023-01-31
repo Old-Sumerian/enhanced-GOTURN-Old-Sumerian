@@ -115,4 +115,6 @@ void BoundingBox::Unscale(const cv::Mat& image, BoundingBox* bbox_unscaled) cons
   bbox_unscaled->y2_ *= image_height;
 }
 
-double
+double BoundingBox::compute_output_width() const {
+  // Get the bounding box width.
+  c
