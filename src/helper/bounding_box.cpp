@@ -117,4 +117,6 @@ void BoundingBox::Unscale(const cv::Mat& image, BoundingBox* bbox_unscaled) cons
 
 double BoundingBox::compute_output_width() const {
   // Get the bounding box width.
-  c
+  const double bbox_width = (x2_ - x1_);
+
+  // We pad the image by a factor of kContextFact
