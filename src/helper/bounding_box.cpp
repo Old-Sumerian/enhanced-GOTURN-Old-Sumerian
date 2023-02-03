@@ -119,4 +119,6 @@ double BoundingBox::compute_output_width() const {
   // Get the bounding box width.
   const double bbox_width = (x2_ - x1_);
 
-  // We pad the image by a factor of kContextFact
+  // We pad the image by a factor of kContextFactor around the bounding box
+  // to include some image context.
+  const double output_width =
