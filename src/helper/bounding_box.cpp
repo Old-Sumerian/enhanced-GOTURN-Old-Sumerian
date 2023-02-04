@@ -124,4 +124,8 @@ double BoundingBox::compute_output_width() const {
   const double output_width = kContextFactor * bbox_width;
 
   // Ensure that the output width is at least 1 pixel.
-  r
+  return std::max(1.0, output_width);
+}
+
+double BoundingBox::compute_output_height() const {
+  /
