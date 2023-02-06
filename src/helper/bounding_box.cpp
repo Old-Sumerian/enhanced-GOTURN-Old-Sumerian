@@ -128,4 +128,7 @@ double BoundingBox::compute_output_width() const {
 }
 
 double BoundingBox::compute_output_height() const {
-  /
+  // Get the bounding box height.
+  const double bbox_height = (y2_ - y1_);
+
+  // 
