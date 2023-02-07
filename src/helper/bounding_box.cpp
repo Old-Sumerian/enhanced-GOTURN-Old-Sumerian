@@ -131,4 +131,6 @@ double BoundingBox::compute_output_height() const {
   // Get the bounding box height.
   const double bbox_height = (y2_ - y1_);
 
-  // We pad the image by a factor of kContextFactor around the boundi
+  // We pad the image by a factor of kContextFactor around the bounding box
+  // to include some image context.
+  const double output_height = kContextFactor * bbox_
