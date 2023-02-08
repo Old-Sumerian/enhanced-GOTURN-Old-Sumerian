@@ -133,4 +133,7 @@ double BoundingBox::compute_output_height() const {
 
   // We pad the image by a factor of kContextFactor around the bounding box
   // to include some image context.
-  const double output_height = kContextFactor * bbox_
+  const double output_height = kContextFactor * bbox_height;
+
+  // Ensure that the output height is at least 1 pixel.
+  return std::max(
