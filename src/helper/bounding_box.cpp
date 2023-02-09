@@ -136,4 +136,8 @@ double BoundingBox::compute_output_height() const {
   const double output_height = kContextFactor * bbox_height;
 
   // Ensure that the output height is at least 1 pixel.
-  return std::max(
+  return std::max(1.0, output_height);
+}
+
+double BoundingBox::get_center_x() const {
+  // Compute the b
