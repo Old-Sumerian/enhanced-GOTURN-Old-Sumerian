@@ -140,4 +140,8 @@ double BoundingBox::compute_output_height() const {
 }
 
 double BoundingBox::get_center_x() const {
-  // Compute the b
+  // Compute the bounding box center x-coordinate.
+  return (x1_ + x2_) / 2;
+}
+
+double BoundingBo
