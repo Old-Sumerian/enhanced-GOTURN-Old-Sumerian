@@ -144,4 +144,6 @@ double BoundingBox::get_center_x() const {
   return (x1_ + x2_) / 2;
 }
 
-double BoundingBo
+double BoundingBox::get_center_y() const {
+  // Compute the bounding box center y-coordinate.
+  return (y
