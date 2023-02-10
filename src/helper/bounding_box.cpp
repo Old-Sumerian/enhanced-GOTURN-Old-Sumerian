@@ -146,4 +146,7 @@ double BoundingBox::get_center_x() const {
 
 double BoundingBox::get_center_y() const {
   // Compute the bounding box center y-coordinate.
-  return (y
+  return (y1_ + y2_) / 2;
+}
+
+void BoundingBox::Recenter(const BoundingBox& search_
