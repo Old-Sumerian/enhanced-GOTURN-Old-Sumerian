@@ -149,4 +149,5 @@ double BoundingBox::get_center_y() const {
   return (y1_ + y2_) / 2;
 }
 
-void BoundingBox::Recenter(const BoundingBox& search_
+void BoundingBox::Recenter(const BoundingBox& search_location,
+              const double edge_spacing_x, const do
