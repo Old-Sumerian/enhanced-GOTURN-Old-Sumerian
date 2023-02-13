@@ -150,4 +150,5 @@ double BoundingBox::get_center_y() const {
 }
 
 void BoundingBox::Recenter(const BoundingBox& search_location,
-              const double edge_spacing_x, const do
+              const double edge_spacing_x, const double edge_spacing_y,
+              BoundingBox* bbox_gt_recentered) const
