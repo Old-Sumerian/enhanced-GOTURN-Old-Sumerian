@@ -152,4 +152,6 @@ double BoundingBox::get_center_y() const {
 void BoundingBox::Recenter(const BoundingBox& search_location,
               const double edge_spacing_x, const double edge_spacing_y,
               BoundingBox* bbox_gt_recentered) const {
-  // Location of bounding box relative to the focused image and edge_spaci
+  // Location of bounding box relative to the focused image and edge_spacing.
+  bbox_gt_recentered->x1_ = x1_ - search_location.x1_ + edge_spacing_x;
+  bbox_gt_recentered->y1
