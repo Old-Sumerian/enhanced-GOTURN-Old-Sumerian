@@ -155,4 +155,5 @@ void BoundingBox::Recenter(const BoundingBox& search_location,
   // Location of bounding box relative to the focused image and edge_spacing.
   bbox_gt_recentered->x1_ = x1_ - search_location.x1_ + edge_spacing_x;
   bbox_gt_recentered->y1_ = y1_ - search_location.y1_ + edge_spacing_y;
-  bbox_gt_recentered->x2_ = x2_ - s
+  bbox_gt_recentered->x2_ = x2_ - search_location.x1_ + edge_spacing_x;
+  bbox_gt_recentered->y2_ = y2_ -
