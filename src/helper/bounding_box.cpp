@@ -159,4 +159,5 @@ void BoundingBox::Recenter(const BoundingBox& search_location,
   bbox_gt_recentered->y2_ = y2_ - search_location.y1_ + edge_spacing_y;
 }
 
-void BoundingBox::Uncenter(const cv
+void BoundingBox::Uncenter(const cv::Mat& raw_image,
+                           const BoundingBox& search_lo
