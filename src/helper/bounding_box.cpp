@@ -165,4 +165,5 @@ void BoundingBox::Uncenter(const cv::Mat& raw_image,
                            BoundingBox* bbox_uncentered) const {
   // Undo the effect of Recenter.
   bbox_uncentered->x1_ = std::max(0.0, x1_ + search_location.x1_ - edge_spacing_x);
-  bbox_uncentered->y1_ = std::
+  bbox_uncentered->y1_ = std::max(0.0, y1_ + search_location.y1_ - edge_spacing_y);
+  bbox_uncentered->x2_
