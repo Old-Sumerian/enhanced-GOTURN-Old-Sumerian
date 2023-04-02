@@ -167,4 +167,7 @@ void BoundingBox::Uncenter(const cv::Mat& raw_image,
   bbox_uncentered->x1_ = std::max(0.0, x1_ + search_location.x1_ - edge_spacing_x);
   bbox_uncentered->y1_ = std::max(0.0, y1_ + search_location.y1_ - edge_spacing_y);
   bbox_uncentered->x2_ = std::min(static_cast<double>(raw_image.cols), x2_ + search_location.x1_ - edge_spacing_x);
-  bbox_uncentered->y2_ = std::min(static_cast<double>(raw_
+  bbox_uncentered->y2_ = std::min(static_cast<double>(raw_image.rows), y2_ + search_location.y1_ - edge_spacing_y);
+}
+
+double BoundingBox::ed
