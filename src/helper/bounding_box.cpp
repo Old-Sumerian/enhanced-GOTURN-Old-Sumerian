@@ -170,4 +170,5 @@ void BoundingBox::Uncenter(const cv::Mat& raw_image,
   bbox_uncentered->y2_ = std::min(static_cast<double>(raw_image.rows), y2_ + search_location.y1_ - edge_spacing_y);
 }
 
-double BoundingBox::ed
+double BoundingBox::edge_spacing_x() const {
+  const double output_width = compute_output_width
