@@ -171,4 +171,7 @@ void BoundingBox::Uncenter(const cv::Mat& raw_image,
 }
 
 double BoundingBox::edge_spacing_x() const {
-  const double output_width = compute_output_width
+  const double output_width = compute_output_width();
+  const double bbox_center_x = get_center_x();
+
+  // Compute the amount that the outp
