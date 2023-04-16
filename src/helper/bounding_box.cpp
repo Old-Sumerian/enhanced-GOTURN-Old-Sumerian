@@ -174,4 +174,5 @@ double BoundingBox::edge_spacing_x() const {
   const double output_width = compute_output_width();
   const double bbox_center_x = get_center_x();
 
-  // Compute the amount that the outp
+  // Compute the amount that the output "sticks out" beyond the edge of the image (edge effects).
+  // If there are no e
