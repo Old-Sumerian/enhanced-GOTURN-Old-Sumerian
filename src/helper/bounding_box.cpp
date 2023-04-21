@@ -175,4 +175,4 @@ double BoundingBox::edge_spacing_x() const {
   const double bbox_center_x = get_center_x();
 
   // Compute the amount that the output "sticks out" beyond the edge of the image (edge effects).
-  // If there are no e
+  // If there are no edge effects, we would have output_width / 2 < bbox_center_x, but if the crop is nea
