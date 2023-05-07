@@ -178,4 +178,8 @@ double BoundingBox::edge_spacing_x() const {
   // If there are no edge effects, we would have output_width / 2 < bbox_center_x, but if the crop is near the left
   // edge of the image then we would have output_width / 2 > bbox_center_x, with the difference
   // being the amount that the output "sticks out" beyond the edge of the image.
-  return std::max(0.0, output_width / 2 - bb
+  return std::max(0.0, output_width / 2 - bbox_center_x);
+}
+
+double BoundingBox::edge_spacing_y() const {
+  con
