@@ -182,4 +182,5 @@ double BoundingBox::edge_spacing_x() const {
 }
 
 double BoundingBox::edge_spacing_y() const {
-  con
+  const double output_height = compute_output_height();
+  const double bbox_center_y = get_cente
