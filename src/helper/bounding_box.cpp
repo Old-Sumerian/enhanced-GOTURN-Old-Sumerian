@@ -186,4 +186,5 @@ double BoundingBox::edge_spacing_y() const {
   const double bbox_center_y = get_center_y();
 
   // Compute the amount that the output "sticks out" beyond the edge of the image (edge effects).
-  // If there are no edge effects, we would have output_h
+  // If there are no edge effects, we would have output_height / 2 < bbox_center_y, but if the crop is near the bottom
+  // edge of the ima
