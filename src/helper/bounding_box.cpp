@@ -185,4 +185,5 @@ double BoundingBox::edge_spacing_y() const {
   const double output_height = compute_output_height();
   const double bbox_center_y = get_center_y();
 
-  // Compute the amount that the output "sticks out" beyond the ed
+  // Compute the amount that the output "sticks out" beyond the edge of the image (edge effects).
+  // If there are no edge effects, we would have output_h
