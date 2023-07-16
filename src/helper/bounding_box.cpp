@@ -189,4 +189,7 @@ double BoundingBox::edge_spacing_y() const {
   // If there are no edge effects, we would have output_height / 2 < bbox_center_y, but if the crop is near the bottom
   // edge of the image then we would have output_height / 2 > bbox_center_y, with the difference
   // being the amount that the output "sticks out" beyond the edge of the image.
-  retur
+  return std::max(0.0, output_height / 2 - bbox_center_y);
+}
+
+void BoundingBox::Draw(c
