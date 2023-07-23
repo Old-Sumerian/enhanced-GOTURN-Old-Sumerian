@@ -194,4 +194,7 @@ double BoundingBox::edge_spacing_y() const {
 
 void BoundingBox::Draw(const int r, const int g, const int b,
                        cv::Mat* image) const {
-  // Get 
+  // Get the top-left point.
+  const cv::Point point1(x1_, y1_);
+
+  // Get the botto
