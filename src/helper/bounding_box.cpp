@@ -197,4 +197,7 @@ void BoundingBox::Draw(const int r, const int g, const int b,
   // Get the top-left point.
   const cv::Point point1(x1_, y1_);
 
-  // Get the botto
+  // Get the bottom-rigth point.
+  const cv::Point point2(x2_, y2_);
+
+  // Get the selected color
