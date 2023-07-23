@@ -200,4 +200,7 @@ void BoundingBox::Draw(const int r, const int g, const int b,
   // Get the bottom-rigth point.
   const cv::Point point2(x2_, y2_);
 
-  // Get the selected color
+  // Get the selected color.
+  const cv::Scalar box_color(b, g, r);
+
+  // Draw a rectangle correspon
