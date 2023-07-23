@@ -192,4 +192,6 @@ double BoundingBox::edge_spacing_y() const {
   return std::max(0.0, output_height / 2 - bbox_center_y);
 }
 
-void BoundingBox::Draw(c
+void BoundingBox::Draw(const int r, const int g, const int b,
+                       cv::Mat* image) const {
+  // Get 
