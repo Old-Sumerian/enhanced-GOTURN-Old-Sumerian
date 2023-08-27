@@ -208,4 +208,5 @@ void BoundingBox::Draw(const int r, const int g, const int b,
   cv::rectangle(*image, point1, point2, box_color, thickness);
 }
 
-void BoundingBox::DrawBoun
+void BoundingBox::DrawBoundingBox(cv::Mat* image) const {
+  // Draw a white bounding box on the
