@@ -204,4 +204,8 @@ void BoundingBox::Draw(const int r, const int g, const int b,
   const cv::Scalar box_color(b, g, r);
 
   // Draw a rectangle corresponding to this bbox with the given color.
-  const int thickness = 3
+  const int thickness = 3;
+  cv::rectangle(*image, point1, point2, box_color, thickness);
+}
+
+void BoundingBox::DrawBoun
