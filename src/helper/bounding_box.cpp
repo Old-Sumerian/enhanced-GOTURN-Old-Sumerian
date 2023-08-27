@@ -209,4 +209,9 @@ void BoundingBox::Draw(const int r, const int g, const int b,
 }
 
 void BoundingBox::DrawBoundingBox(cv::Mat* image) const {
-  // Draw a white bounding box on the
+  // Draw a white bounding box on the image.
+  Draw(255, 255, 255, image);
+}
+
+void BoundingBox::Shift(const cv::Mat& image,
+         
