@@ -216,4 +216,6 @@ void BoundingBox::DrawBoundingBox(cv::Mat* image) const {
 void BoundingBox::Shift(const cv::Mat& image,
                         const double lambda_scale_frac,
                         const double lambda_shift_frac,
-                        const double min_scale, const double max_
+                        const double min_scale, const double max_scale,
+                        const bool shift_motion_model,
+                     
