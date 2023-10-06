@@ -220,4 +220,7 @@ void BoundingBox::Shift(const cv::Mat& image,
                         const bool shift_motion_model,
                         BoundingBox* bbox_rand) const {
   const double width = get_width();
-  const 
+  const double height = get_height();
+
+  double center_x = get_center_x();
+  dou
