@@ -223,4 +223,6 @@ void BoundingBox::Shift(const cv::Mat& image,
   const double height = get_height();
 
   double center_x = get_center_x();
-  dou
+  double center_y = get_center_y();
+
+  // Number of times to try shifting the bo
