@@ -225,4 +225,7 @@ void BoundingBox::Shift(const cv::Mat& image,
   double center_x = get_center_x();
   double center_y = get_center_y();
 
-  // Number of times to try shifting the bo
+  // Number of times to try shifting the bounding box.
+  const int kMaxNumTries = 10;
+
+  // Sample a width scaling facto
