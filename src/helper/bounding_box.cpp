@@ -228,4 +228,5 @@ void BoundingBox::Shift(const cv::Mat& image,
   // Number of times to try shifting the bounding box.
   const int kMaxNumTries = 10;
 
-  // Sample a width scaling facto
+  // Sample a width scaling factor for the new crop window, thresholding the scale to stay within a reasonable window.
+  d
