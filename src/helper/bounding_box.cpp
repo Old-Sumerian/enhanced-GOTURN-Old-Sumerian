@@ -235,4 +235,6 @@ void BoundingBox::Shift(const cv::Mat& image,
     // Sample.
     double width_scale_factor;
     if (shift_motion_model) {
-      width_scale_factor = std::max(min_scale, std
+      width_scale_factor = std::max(min_scale, std::min(max_scale, sample_exp_two_sided(lambda_scale_frac)));
+    } else {
+      co
