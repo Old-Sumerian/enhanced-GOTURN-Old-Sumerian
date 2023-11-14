@@ -238,4 +238,7 @@ void BoundingBox::Shift(const cv::Mat& image,
       width_scale_factor = std::max(min_scale, std::min(max_scale, sample_exp_two_sided(lambda_scale_frac)));
     } else {
       const double rand_num = sample_rand_uniform();
-      width_scale_factor = rand_num * (max_
+      width_scale_factor = rand_num * (max_scale - min_scale) + min_scale;
+    }
+    // Expand width by scaling factor.
+  
