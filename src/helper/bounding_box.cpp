@@ -241,4 +241,6 @@ void BoundingBox::Shift(const cv::Mat& image,
       width_scale_factor = rand_num * (max_scale - min_scale) + min_scale;
     }
     // Expand width by scaling factor.
-  
+    new_width = width * (1 + width_scale_factor);
+    // Ensure that width stays within valid limits.
+    ne
