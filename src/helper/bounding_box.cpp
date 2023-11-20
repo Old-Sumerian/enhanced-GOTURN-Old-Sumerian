@@ -244,3 +244,7 @@ void BoundingBox::Shift(const cv::Mat& image,
     new_width = width * (1 + width_scale_factor);
     // Ensure that width stays within valid limits.
     new_width = std::max(1.0, std::min(static_cast<double>(image.cols - 1), new_width));
+    num_tries_width++;
+  }
+
+  // Find a height scaling factor for the new crop window,
