@@ -243,4 +243,4 @@ void BoundingBox::Shift(const cv::Mat& image,
     // Expand width by scaling factor.
     new_width = width * (1 + width_scale_factor);
     // Ensure that width stays within valid limits.
-    ne
+    new_width = std::max(1.0, std::min(static_cast<double>(image.cols - 1), new_width));
