@@ -247,4 +247,5 @@ void BoundingBox::Shift(const cv::Mat& image,
     num_tries_width++;
   }
 
-  // Find a height scaling factor for the new crop window,
+  // Find a height scaling factor for the new crop window, thresholding the scale to stay within a reasonable window.
+  double new_heigh
