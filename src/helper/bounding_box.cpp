@@ -256,4 +256,5 @@ void BoundingBox::Shift(const cv::Mat& image,
     if (shift_motion_model) {
       height_scale_factor = std::max(min_scale, std::min(max_scale, sample_exp_two_sided(lambda_scale_frac)));
     } else {
-    
+      const double rand_num = sample_rand_uniform();
+      heigh
