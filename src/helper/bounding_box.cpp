@@ -252,4 +252,6 @@ void BoundingBox::Shift(const cv::Mat& image,
   int num_tries_height = 0;
   while ((new_height < 0 || new_height > image.rows - 1) && num_tries_height < kMaxNumTries) {
     // Sample.
-    do
+    double height_scale_factor;
+    if (shift_motion_model) {
+      height_scale_factor = std::ma
