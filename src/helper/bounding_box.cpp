@@ -259,4 +259,6 @@ void BoundingBox::Shift(const cv::Mat& image,
       const double rand_num = sample_rand_uniform();
       height_scale_factor = rand_num * (max_scale - min_scale) + min_scale;
     }
-    // Expand height b
+    // Expand height by scaling factor.
+    new_height = height * (1 + height_scale_factor);
+    // Ensure that height 
