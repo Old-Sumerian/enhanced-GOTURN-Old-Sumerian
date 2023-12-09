@@ -261,4 +261,5 @@ void BoundingBox::Shift(const cv::Mat& image,
     }
     // Expand height by scaling factor.
     new_height = height * (1 + height_scale_factor);
-    // Ensure that height 
+    // Ensure that height stays within valid limits.
+    new_height = max(1.0, min(static_cast<double>(imag
