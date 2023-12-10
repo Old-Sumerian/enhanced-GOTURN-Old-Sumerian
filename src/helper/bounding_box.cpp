@@ -268,4 +268,7 @@ void BoundingBox::Shift(const cv::Mat& image,
 
   // Find a random x translation for the new crop window.
   bool first_time_x = true;
-  double new_center_x 
+  double new_center_x = -1;
+  int num_tries_x = 0;
+  while ((first_time_x ||
+         // Ensure that the new object center rem
