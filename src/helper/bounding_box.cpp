@@ -274,4 +274,6 @@ void BoundingBox::Shift(const cv::Mat& image,
          // Ensure that the new object center remains in the old image window.
          new_center_x < center_x - width * kContextFactor / 2 ||
          new_center_x > center_x + width * kContextFactor / 2 ||
-          // Ensure that the new window stays within the bo
+          // Ensure that the new window stays within the borders of the image.
+         new_center_x - new_width / 2 < 0 ||
+         new_center_x
