@@ -276,4 +276,7 @@ void BoundingBox::Shift(const cv::Mat& image,
          new_center_x > center_x + width * kContextFactor / 2 ||
           // Ensure that the new window stays within the borders of the image.
          new_center_x - new_width / 2 < 0 ||
-         new_center_x
+         new_center_x + new_width / 2 > image.cols)
+         && num_tries_x < kMaxNumTries) {
+    // Sample.
+    double new_x_t
