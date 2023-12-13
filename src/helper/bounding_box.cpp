@@ -279,4 +279,6 @@ void BoundingBox::Shift(const cv::Mat& image,
          new_center_x + new_width / 2 > image.cols)
          && num_tries_x < kMaxNumTries) {
     // Sample.
-    double new_x_t
+    double new_x_temp;
+    if (shift_motion_model) {
+      new_x_temp = center_x + width * sam
