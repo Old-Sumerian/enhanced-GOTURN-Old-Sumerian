@@ -284,4 +284,7 @@ void BoundingBox::Shift(const cv::Mat& image,
       new_x_temp = center_x + width * sample_exp_two_sided(lambda_shift_frac);
     } else {
       const double rand_num = sample_rand_uniform();
-      new_x_temp = center_x + rand_num * (2 * new_wid
+      new_x_temp = center_x + rand_num * (2 * new_width) - new_width;
+    }
+    // Make sure that the window stays within the image.
+    new_c
