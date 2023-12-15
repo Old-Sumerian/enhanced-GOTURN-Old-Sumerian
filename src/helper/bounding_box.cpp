@@ -288,3 +288,8 @@ void BoundingBox::Shift(const cv::Mat& image,
     }
     // Make sure that the window stays within the image.
     new_center_x = min(image.cols - new_width / 2, max(new_width / 2, new_x_temp));
+    first_time_x = false;
+    num_tries_x++;
+  }
+
+  // Find a random y translation fo
