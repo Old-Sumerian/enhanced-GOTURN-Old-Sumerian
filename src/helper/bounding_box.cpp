@@ -294,4 +294,7 @@ void BoundingBox::Shift(const cv::Mat& image,
 
   // Find a random y translation for the new crop window.
   bool first_time_y = true;
-  double new_cent
+  double new_center_y = -1;
+  int num_tries_y = 0;
+  while ((first_time_y ||
+          // Ensu
