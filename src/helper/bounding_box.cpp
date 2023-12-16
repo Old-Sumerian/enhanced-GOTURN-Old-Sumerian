@@ -297,4 +297,5 @@ void BoundingBox::Shift(const cv::Mat& image,
   double new_center_y = -1;
   int num_tries_y = 0;
   while ((first_time_y ||
-          // Ensu
+          // Ensure that the new object center remains in the old image window.
+         new_cent
