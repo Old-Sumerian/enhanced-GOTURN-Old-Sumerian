@@ -306,4 +306,6 @@ void BoundingBox::Shift(const cv::Mat& image,
          && num_tries_y < kMaxNumTries) {
     // Sample.
     double new_y_temp;
-    if (shift_motion_m
+    if (shift_motion_model) {
+      new_y_temp = center_y + height * sample_exp_two_sided(lambda_shift_frac);
+   
