@@ -303,4 +303,7 @@ void BoundingBox::Shift(const cv::Mat& image,
           // Ensure that the new window stays within the borders of the image.
          new_center_y - new_height / 2 < 0 ||
          new_center_y + new_height / 2 > image.rows)
-         && num_tries_y < kMax
+         && num_tries_y < kMaxNumTries) {
+    // Sample.
+    double new_y_temp;
+    if (shift_motion_m
