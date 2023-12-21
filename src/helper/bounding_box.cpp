@@ -308,4 +308,5 @@ void BoundingBox::Shift(const cv::Mat& image,
     double new_y_temp;
     if (shift_motion_model) {
       new_y_temp = center_y + height * sample_exp_two_sided(lambda_shift_frac);
-   
+    } else {
+      const double rand_num = sample_rand_uniform();
