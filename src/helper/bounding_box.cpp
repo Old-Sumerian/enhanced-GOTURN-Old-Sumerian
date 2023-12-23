@@ -316,4 +316,7 @@ void BoundingBox::Shift(const cv::Mat& image,
     new_center_y = min(image.rows - new_height / 2, max(new_height / 2, new_y_temp));
     first_time_y = false;
     num_tries_y++;
- 
+  }
+
+  // Create a bounding box that matches the new sampled window.
+  bbox_rand->x1_ =
