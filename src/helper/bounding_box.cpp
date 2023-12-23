@@ -312,3 +312,5 @@ void BoundingBox::Shift(const cv::Mat& image,
       const double rand_num = sample_rand_uniform();
       new_y_temp = center_y + rand_num * (2 * new_height) - new_height;
     }
+    // Make sure that the window stays within the image.
+    new_center_y = 
