@@ -325,4 +325,5 @@ void BoundingBox::Shift(const cv::Mat& image,
   bbox_rand->y2_ = new_center_y + new_height / 2;
 }
 
-double B
+double BoundingBox::compute_intersection(const BoundingBox& bbox) const {
+  const double area
