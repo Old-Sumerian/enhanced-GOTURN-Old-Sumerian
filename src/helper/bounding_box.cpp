@@ -326,4 +326,4 @@ void BoundingBox::Shift(const cv::Mat& image,
 }
 
 double BoundingBox::compute_intersection(const BoundingBox& bbox) const {
-  const double area
+  const double area = std::max(0.0, std::min(x2_, bbox.x2_) - std::max(x1_, bbox.x1_)) * std::max(0.0,
