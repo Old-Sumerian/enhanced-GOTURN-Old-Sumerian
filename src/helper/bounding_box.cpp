@@ -330,4 +330,6 @@ double BoundingBox::compute_intersection(const BoundingBox& bbox) const {
   return area;
 }
 
-double BoundingBox
+double BoundingBox::compute_area() const {
+  return get_width() * get_height();
+}
