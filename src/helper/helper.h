@@ -16,4 +16,7 @@
 #include <boost/tokenizer.hpp>
 
 #include <opencv/cv.h>
-#include <ope
+#include <opencv2/core/core.hpp>
+#include <opencv2/highgui/highgui.hpp>
+
+// Convenience helper funct
