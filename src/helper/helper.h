@@ -23,4 +23,7 @@
 
 // *******Number / string conversions*************
 
-// Conversions from number into a 
+// Conversions from number into a string.
+std::string num2str(const int num);
+std::string num2str(const float num);
+std::str
