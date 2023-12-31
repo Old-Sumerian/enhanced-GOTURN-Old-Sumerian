@@ -26,4 +26,5 @@
 // Conversions from number into a string.
 std::string num2str(const int num);
 std::string num2str(const float num);
-std::str
+std::string num2str(const double num);
+std::string num2str(const double num, const int decimal_plac
