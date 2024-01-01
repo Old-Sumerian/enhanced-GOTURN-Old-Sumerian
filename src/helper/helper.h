@@ -31,4 +31,6 @@ std::string num2str(const double num, const int decimal_places);
 std::string num2str(const unsigned int num);
 std::string num2str(const size_t num);
 
-// Conve
+// Conversions from string into a number.
+template<class T>
+  T str2num(c
