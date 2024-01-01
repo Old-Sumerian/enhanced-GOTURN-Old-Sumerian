@@ -27,4 +27,8 @@
 std::string num2str(const int num);
 std::string num2str(const float num);
 std::string num2str(const double num);
-std::string num2str(const double num, const int decimal_plac
+std::string num2str(const double num, const int decimal_places);
+std::string num2str(const unsigned int num);
+std::string num2str(const size_t num);
+
+// Conve
