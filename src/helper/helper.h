@@ -33,4 +33,9 @@ std::string num2str(const size_t num);
 
 // Conversions from string into a number.
 template<class T>
-  T str2num(c
+  T str2num(const std::string& s);
+
+
+// Template implementation
+template<class T>
+    T str2num(const s
