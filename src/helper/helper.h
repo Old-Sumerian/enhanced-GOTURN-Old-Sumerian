@@ -38,4 +38,9 @@ template<class T>
 
 // Template implementation
 template<class T>
-    T str2num(const s
+    T str2num(const std::string& s)
+{
+     std::istringstream stream (s);
+     T t;
+     stream >> t;
+     re
