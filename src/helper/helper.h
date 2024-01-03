@@ -43,4 +43,9 @@ template<class T>
      std::istringstream stream (s);
      T t;
      stream >> t;
-     re
+     return t;
+}
+
+// *******File IO *************
+
+// Find all subfolder of the 
