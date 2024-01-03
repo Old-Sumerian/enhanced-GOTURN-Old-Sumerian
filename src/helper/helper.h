@@ -48,4 +48,5 @@ template<class T>
 
 // *******File IO *************
 
-// Find all subfolder of the 
+// Find all subfolder of the given folder.
+void find_subfolders(const boost::filesystem::path& folder, std::ve
