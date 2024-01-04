@@ -52,4 +52,5 @@ template<class T>
 void find_subfolders(const boost::filesystem::path& folder, std::vector<std::string>* sub_folders);
 
 // Find all files within a given folder that match a given regex filter.
-void find_matching_files(const boos
+void find_matching_files(const boost::filesystem::path& folder, const boost::regex filter,
+                         std::vecto
