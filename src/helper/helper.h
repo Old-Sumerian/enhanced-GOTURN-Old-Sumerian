@@ -53,4 +53,7 @@ void find_subfolders(const boost::filesystem::path& folder, std::vector<std::str
 
 // Find all files within a given folder that match a given regex filter.
 void find_matching_files(const boost::filesystem::path& folder, const boost::regex filter,
-                         std::vecto
+                         std::vector<std::string>* files);
+
+// *******Probability*************
+// Generate a random number
