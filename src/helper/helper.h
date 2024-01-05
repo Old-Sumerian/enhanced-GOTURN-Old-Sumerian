@@ -59,4 +59,7 @@ void find_matching_files(const boost::filesystem::path& folder, const boost::reg
 // Generate a random number in (0,1)
 double sample_rand_uniform();
 
-// Sample from an exponential distribut
+// Sample from an exponential distribution.
+double sample_exp(const double lambda);
+
+// Sample from a Laplacian dis
