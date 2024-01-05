@@ -56,4 +56,7 @@ void find_matching_files(const boost::filesystem::path& folder, const boost::reg
                          std::vector<std::string>* files);
 
 // *******Probability*************
-// Generate a random number
+// Generate a random number in (0,1)
+double sample_rand_uniform();
+
+// Sample from an exponential distribut
