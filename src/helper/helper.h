@@ -63,4 +63,7 @@ double sample_rand_uniform();
 double sample_exp(const double lambda);
 
 // Sample from a Laplacian distribution, aka two-sided exponential.
-double sample_exp_two_sided(const double lam
+double sample_exp_two_sided(const double lambda);
+
+#endif /* HELPER_H_ */
+
