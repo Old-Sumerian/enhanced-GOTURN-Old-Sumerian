@@ -123,3 +123,7 @@ ScopedTimer::ScopedTimer(const std::string& description) :
 }
 
 ScopedTimer::~ScopedTimer()
+{
+  hrt_.stop();
+  std::cout << hrt_.report() << std::endl;
+}
