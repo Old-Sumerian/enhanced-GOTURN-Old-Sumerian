@@ -90,3 +90,17 @@ void CropPadImage(const BoundingBox& bbox_tight, const cv::Mat& image, cv::Mat* 
   // This might be 0, but it might be > 0 if the output is near the edge of the image.
   *edge_spacing_x = std::min(bbox_tight.edge_spacing_x(), static_cast<double>(output_image.cols - 1));
   *edge_spacing_y = std::min(bbox_tight.edge_spacing_y(), static_cast<double>(output_image.rows - 1));
+
+  // Get the location within the output to put the cropped image (accounting for edge effects).
+  cv::Rect output_rect(*edge_spacing_x, *edge_spacing_y, roi_width, roi_height);
+  cv::Mat output_image_roi = output_image(output_rect);
+
+  // Copy the cropped image to the specified location within the output.
+  // Without edge effects, this will fill the output.
+  // With edge effects, this will comprise a subset of the output, with black
+  // being placed around the crop to account for edge effects.
+  cropped_image.copyTo(output_image_roi);
+
+  // Set the output.
+  *pad_image = output_image;
+}
