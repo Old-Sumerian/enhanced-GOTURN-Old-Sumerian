@@ -5,4 +5,5 @@
 
 // Functions to process images for tracking.
 
-// Crop the image at the bounding box location, plus s
+// Crop the image at the bounding box location, plus some additional padding.
+// To account for edge effects, we use a black background fo
