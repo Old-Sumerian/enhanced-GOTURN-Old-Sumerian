@@ -3,4 +3,6 @@
 
 #include "bounding_box.h"
 
-// Function
+// Functions to process images for tracking.
+
+// Crop the image at the bounding box location, plus s
