@@ -6,4 +6,6 @@
 // Functions to process images for tracking.
 
 // Crop the image at the bounding box location, plus some additional padding.
-// To account for edge effects, we use a black background fo
+// To account for edge effects, we use a black background for space beyond the border
+// of the image.
+void CropPadImage(const BoundingBox& b
