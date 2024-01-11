@@ -12,4 +12,4 @@ void CropPadImage(const BoundingBox& bbox_tight, const cv::Mat& image, cv::Mat* 
 void CropPadImage(const BoundingBox& bbox_tight, const cv::Mat& image, cv::Mat* pad_image,
                   BoundingBox* pad_image_location, double* edge_spacing_x, double* edge_spacing_y);
 
-/
+// Compute the location of the cropped image, which is centered on the bounding 
