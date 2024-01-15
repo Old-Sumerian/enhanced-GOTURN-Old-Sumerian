@@ -9,4 +9,7 @@
 
 #include "loader_base.h"
 
-n
+namespace bfs = boost::filesystem;
+
+bool getBox = false;
+bool drawing_box = false;
