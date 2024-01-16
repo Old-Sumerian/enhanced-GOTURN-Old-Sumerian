@@ -13,3 +13,6 @@ namespace bfs = boost::filesystem;
 
 bool getBox = false;
 bool drawing_box = false;
+
+Loader::Loader(const string& _videos_folder)
+        :videos_folder_(_videos_folder) {
