@@ -16,3 +16,8 @@ bool drawing_box = false;
 
 Loader::Loader(const string& _videos_folder)
         :videos_folder_(_videos_folder) {
+    loadervideos(_videos_folder);
+}
+
+void Loader::loadervideos(const string _videos_folder){
+    if(!
