@@ -25,4 +25,6 @@ void Loader::loadervideos(const string _videos_folder){
         return;
     }
 
-    vec
+    vector<string> videos;
+    find_subfolders(_videos_folder,&videos);
+    pri
