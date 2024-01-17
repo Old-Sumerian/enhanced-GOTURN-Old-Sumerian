@@ -20,4 +20,5 @@ Loader::Loader(const string& _videos_folder)
 }
 
 void Loader::loadervideos(const string _videos_folder){
-    if(!
+    if(!bfs::is_directory(_videos_folder)){
+        printf("ERROR - %s is not a valid dir
