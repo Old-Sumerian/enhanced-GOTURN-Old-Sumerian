@@ -21,4 +21,8 @@ Loader::Loader(const string& _videos_folder)
 
 void Loader::loadervideos(const string _videos_folder){
     if(!bfs::is_directory(_videos_folder)){
-        printf("ERROR - %s is not a valid dir
+        printf("ERROR - %s is not a valid directory!\n",_videos_folder.c_str());
+        return;
+    }
+
+    vec
