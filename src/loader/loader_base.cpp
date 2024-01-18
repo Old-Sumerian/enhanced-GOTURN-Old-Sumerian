@@ -29,4 +29,6 @@ void Loader::loadervideos(const string _videos_folder){
     find_subfolders(_videos_folder,&videos);
     printf("find %zu videos ... \n" ,videos.size());
 
-    for(int i = 0; i < videos.si
+    for(int i = 0; i < videos.size(); ++i){
+        const string video_name = videos[i];
+        const str
