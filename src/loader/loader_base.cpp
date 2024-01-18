@@ -27,4 +27,6 @@ void Loader::loadervideos(const string _videos_folder){
 
     vector<string> videos;
     find_subfolders(_videos_folder,&videos);
-    pri
+    printf("find %zu videos ... \n" ,videos.size());
+
+    for(int i = 0; i < videos.si
