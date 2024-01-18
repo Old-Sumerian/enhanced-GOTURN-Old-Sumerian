@@ -33,4 +33,7 @@ void Loader::loadervideos(const string _videos_folder){
         const string video_name = videos[i];
         const string video_path = _videos_folder+"/"+video_name;
 
-        printf("Loading vi
+        printf("Loading video : %s \n",video_name.c_str());
+
+        Video video;
+        video.
