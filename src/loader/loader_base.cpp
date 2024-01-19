@@ -41,4 +41,8 @@ void Loader::loadervideos(const string _videos_folder){
         const boost::regex image_filer(".*\\.jpg");
         find_matching_files(video_path,image_filer,&video.all_frames_);
         printf("%s have %zu frames\n",video_name.c_str(),video.all_frames_.size());
-        videos_.pu
+        videos_.push_back(video);
+    }
+
+}
+void Loader::loadFirstBox(Video video,cv::Mat& image,cv::Rec
