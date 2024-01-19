@@ -39,4 +39,5 @@ void Loader::loadervideos(const string _videos_folder){
         video.video_name_ = video_path;
 
         const boost::regex image_filer(".*\\.jpg");
-        find
+        find_matching_files(video_path,image_filer,&video.all_frames_);
+        printf("%s ha
