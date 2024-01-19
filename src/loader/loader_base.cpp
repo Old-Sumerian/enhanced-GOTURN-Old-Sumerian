@@ -36,4 +36,7 @@ void Loader::loadervideos(const string _videos_folder){
         printf("Loading video : %s \n",video_name.c_str());
 
         Video video;
-        video.
+        video.video_name_ = video_path;
+
+        const boost::regex image_filer(".*\\.jpg");
+        find
