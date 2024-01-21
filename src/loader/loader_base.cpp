@@ -45,4 +45,7 @@ void Loader::loadervideos(const string _videos_folder){
     }
 
 }
-void Loader::loadFirstBox(Video video,cv::Mat& image,cv::Rec
+void Loader::loadFirstBox(Video video,cv::Mat& image,cv::Rect& firstBox)
+{
+;
+    const string& image_file = video.video_name_ + "/" + video.all_frames_[0]
