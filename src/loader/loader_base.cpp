@@ -55,4 +55,7 @@ void Loader::loadFirstBox(Video video,cv::Mat& image,cv::Rect& firstBox)
     cv::Rect box;
     const string windowName = "first image";
     cv::namedWindow(windowName,CV_WINDOW_AUTOSIZE);
-    cv::setMouse
+    cv::setMouseCallback(windowName,mouseHandler,&box);
+    cv::Mat firstImage;
+
+    while(!get
