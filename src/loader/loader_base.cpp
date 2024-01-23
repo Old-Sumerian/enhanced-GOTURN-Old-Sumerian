@@ -58,4 +58,6 @@ void Loader::loadFirstBox(Video video,cv::Mat& image,cv::Rect& firstBox)
     cv::setMouseCallback(windowName,mouseHandler,&box);
     cv::Mat firstImage;
 
-    while(!get
+    while(!getBox){
+        image.copyTo(firstImage);
+        cv::rectangle(firstImage,box,C
