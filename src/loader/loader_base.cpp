@@ -66,4 +66,6 @@ void Loader::loadFirstBox(Video video,cv::Mat& image,cv::Rect& firstBox)
     }
     cv::setMouseCallback(windowName,NULL,NULL);
     firstBox = box;
-   
+    printf("x1: %i  y1: %i "
+                   "width: %i  height: %i \n",
+          box.x,box.
