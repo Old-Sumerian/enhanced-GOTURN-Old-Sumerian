@@ -71,4 +71,7 @@ void Loader::loadFirstBox(Video video,cv::Mat& image,cv::Rect& firstBox)
           box.x,box.y,box.width,box.height);
     cv::waitKey(0);
     cv::destroyAllWindows();
-    getBox
+    getBox = false;
+}
+
+ void Loader::mouseHandler(int event, int x, int y, int flag, void *
