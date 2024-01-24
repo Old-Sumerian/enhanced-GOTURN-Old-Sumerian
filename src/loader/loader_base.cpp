@@ -68,4 +68,7 @@ void Loader::loadFirstBox(Video video,cv::Mat& image,cv::Rect& firstBox)
     firstBox = box;
     printf("x1: %i  y1: %i "
                    "width: %i  height: %i \n",
-          box.x,box.
+          box.x,box.y,box.width,box.height);
+    cv::waitKey(0);
+    cv::destroyAllWindows();
+    getBox
