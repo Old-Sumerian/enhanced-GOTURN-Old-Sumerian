@@ -81,4 +81,6 @@ void Loader::loadFirstBox(Video video,cv::Mat& image,cv::Rect& firstBox)
     {
         case CV_EVENT_MOUSEMOVE:
             if(drawing_box){
-                bo
+                box->width = x - box->x;
+                box->height = y - box->y;
+   
