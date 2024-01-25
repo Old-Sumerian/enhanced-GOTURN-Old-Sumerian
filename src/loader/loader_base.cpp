@@ -74,4 +74,7 @@ void Loader::loadFirstBox(Video video,cv::Mat& image,cv::Rect& firstBox)
     getBox = false;
 }
 
- void Loader::mouseHandler(int event, int x, int y, int flag, void *
+ void Loader::mouseHandler(int event, int x, int y, int flag, void *userdata ){
+
+    cv::Rect* box = (cv::Rect*)userdata;
+    switch (event)
