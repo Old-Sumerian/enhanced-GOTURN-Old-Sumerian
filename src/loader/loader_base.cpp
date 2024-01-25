@@ -78,3 +78,7 @@ void Loader::loadFirstBox(Video video,cv::Mat& image,cv::Rect& firstBox)
 
     cv::Rect* box = (cv::Rect*)userdata;
     switch (event)
+    {
+        case CV_EVENT_MOUSEMOVE:
+            if(drawing_box){
+                bo
