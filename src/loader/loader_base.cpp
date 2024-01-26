@@ -83,4 +83,7 @@ void Loader::loadFirstBox(Video video,cv::Mat& image,cv::Rect& firstBox)
             if(drawing_box){
                 box->width = x - box->x;
                 box->height = y - box->y;
-   
+            }
+            break;
+        case CV_EVENT_LBUTTONDOWN:
+     
