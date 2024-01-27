@@ -89,4 +89,7 @@ void Loader::loadFirstBox(Video video,cv::Mat& image,cv::Rect& firstBox)
             drawing_box = true;
             box->x = x;
             box->y = y;
-            
+            break;
+        case CV_EVENT_LBUTTONUP:
+            drawing_box = false;
+   
