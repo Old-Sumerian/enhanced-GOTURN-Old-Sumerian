@@ -86,4 +86,7 @@ void Loader::loadFirstBox(Video video,cv::Mat& image,cv::Rect& firstBox)
             }
             break;
         case CV_EVENT_LBUTTONDOWN:
-     
+            drawing_box = true;
+            box->x = x;
+            box->y = y;
+            
