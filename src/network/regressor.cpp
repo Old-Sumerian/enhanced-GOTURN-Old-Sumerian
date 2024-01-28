@@ -4,4 +4,8 @@
 
 // Credits:
 // This file was mostly taken from:
-// https://github.com/BVLC/caffe/tr
+// https://github.com/BVLC/caffe/tree/master/examples/cpp_classification
+
+using caffe::Blob;
+using caffe::Net;
+using s
