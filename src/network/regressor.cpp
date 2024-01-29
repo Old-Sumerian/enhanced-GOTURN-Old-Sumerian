@@ -8,4 +8,7 @@
 
 using caffe::Blob;
 using caffe::Net;
-using s
+using std::string;
+
+// We need 2 inputs: one for the current frame and one for the previous frame.
+const in
