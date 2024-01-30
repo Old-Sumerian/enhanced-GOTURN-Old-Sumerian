@@ -11,4 +11,7 @@ using caffe::Net;
 using std::string;
 
 // We need 2 inputs: one for the current frame and one for the previous frame.
-const in
+const int kNumInputs = 2;
+
+Regressor::Regressor(const string& deploy_proto,
+                  
