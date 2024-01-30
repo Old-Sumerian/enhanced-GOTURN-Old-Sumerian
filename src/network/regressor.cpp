@@ -14,4 +14,6 @@ using std::string;
 const int kNumInputs = 2;
 
 Regressor::Regressor(const string& deploy_proto,
-                  
+                     const string& caffe_model,
+                     const int gpu_id,
+         
