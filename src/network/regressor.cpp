@@ -20,4 +20,10 @@ Regressor::Regressor(const string& deploy_proto,
                      const bool do_train)
   : num_inputs_(num_inputs),
     caffe_model_(caffe_model),
-    modified_params_(
+    modified_params_(false)
+
+{
+  SetupNetwork(deploy_proto, caffe_model, gpu_id, do_train);
+}
+
+Regressor::Regr
