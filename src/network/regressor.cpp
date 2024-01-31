@@ -26,4 +26,5 @@ Regressor::Regressor(const string& deploy_proto,
   SetupNetwork(deploy_proto, caffe_model, gpu_id, do_train);
 }
 
-Regressor::Regr
+Regressor::Regressor(const string& deploy_proto,
+                     const string& caffe_mod
