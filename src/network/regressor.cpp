@@ -27,4 +27,6 @@ Regressor::Regressor(const string& deploy_proto,
 }
 
 Regressor::Regressor(const string& deploy_proto,
-                     const string& caffe_mod
+                     const string& caffe_model,
+                     const int gpu_id,
+                     const bool do_train)
