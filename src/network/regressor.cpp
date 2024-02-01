@@ -30,3 +30,6 @@ Regressor::Regressor(const string& deploy_proto,
                      const string& caffe_model,
                      const int gpu_id,
                      const bool do_train)
+  : num_inputs_(kNumInputs),
+    caffe_model_(caffe_model),
+    modi
