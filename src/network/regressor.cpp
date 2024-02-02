@@ -34,4 +34,8 @@ Regressor::Regressor(const string& deploy_proto,
     caffe_model_(caffe_model),
     modified_params_(false)
 {
-  SetupNetwork(deploy_proto, caffe_model, gpu_id, do_t
+  SetupNetwork(deploy_proto, caffe_model, gpu_id, do_train);
+}
+
+//#define  CPU_ONLY
+void Regressor::SetupNetwork(const string&
