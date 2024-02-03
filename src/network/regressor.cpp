@@ -42,4 +42,6 @@ void Regressor::SetupNetwork(const string& deploy_proto,
                              const string& caffe_model,
                              const int gpu_id,
                              const bool do_train) {
-#ifdef
+#ifdef CPU_ONLY
+  printf("Setting up Caffe in CPU mode\n");
+  caffe::Caffe::set_mode(caffe::Caf
