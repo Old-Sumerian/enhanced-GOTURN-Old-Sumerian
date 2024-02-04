@@ -47,3 +47,8 @@ void Regressor::SetupNetwork(const string& deploy_proto,
   caffe::Caffe::set_mode(caffe::Caffe::CPU);
 #else
   printf("Setting up Caffe in GPU mode with ID: %d\n", gpu_id);
+  caffe::Caffe::SetDevice(gpu_id);
+  caffe::Caffe::set_mode(caffe::Caffe::GPU);
+#endif
+
+  if
