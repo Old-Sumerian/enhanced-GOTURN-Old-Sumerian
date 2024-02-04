@@ -51,4 +51,6 @@ void Regressor::SetupNetwork(const string& deploy_proto,
   caffe::Caffe::set_mode(caffe::Caffe::GPU);
 #endif
 
-  if
+  if (do_train) {
+    printf("Setting phase to train\n");
+ 
