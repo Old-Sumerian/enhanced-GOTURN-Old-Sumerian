@@ -53,4 +53,6 @@ void Regressor::SetupNetwork(const string& deploy_proto,
 
   if (do_train) {
     printf("Setting phase to train\n");
- 
+    net_.reset(new Net<float>(deploy_proto, caffe::TRAIN));
+  } else {
+    printf(
