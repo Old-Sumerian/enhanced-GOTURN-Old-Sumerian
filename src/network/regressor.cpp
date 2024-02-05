@@ -56,4 +56,8 @@ void Regressor::SetupNetwork(const string& deploy_proto,
     net_.reset(new Net<float>(deploy_proto, caffe::TRAIN));
   } else {
     printf("Setting phase to test\n");
-    net_.reset(new Net<float>(deploy_proto, caff
+    net_.reset(new Net<float>(deploy_proto, caffe::TEST));
+  }
+
+  if (caffe_model != "NONE") {
+    net_->CopyTrainedLayers
