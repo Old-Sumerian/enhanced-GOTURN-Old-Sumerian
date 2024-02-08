@@ -62,4 +62,7 @@ void Regressor::SetupNetwork(const string& deploy_proto,
   if (caffe_model != "NONE") {
     net_->CopyTrainedLayersFrom(caffe_model_);
   } else {
-    printf("Not initializing network 
+    printf("Not initializing network from pre-trained model\n");
+  }
+
+  //CHECK_EQ(net_->num_inputs(), num_inputs_) << "Network sho
