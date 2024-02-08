@@ -65,4 +65,5 @@ void Regressor::SetupNetwork(const string& deploy_proto,
     printf("Not initializing network from pre-trained model\n");
   }
 
-  //CHECK_EQ(net_->num_inputs(), num_inputs_) << "Network sho
+  //CHECK_EQ(net_->num_inputs(), num_inputs_) << "Network should have exactly " << num_inputs_ << " inputs.";
+  CHECK_EQ(net_->num_outputs
