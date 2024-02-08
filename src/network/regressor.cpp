@@ -66,4 +66,6 @@ void Regressor::SetupNetwork(const string& deploy_proto,
   }
 
   //CHECK_EQ(net_->num_inputs(), num_inputs_) << "Network should have exactly " << num_inputs_ << " inputs.";
-  CHECK_EQ(net_->num_outputs
+  CHECK_EQ(net_->num_outputs(), 1) << "Network should have exactly one output.";
+
+  Blob<float>* input_layer = net_
