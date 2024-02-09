@@ -68,4 +68,6 @@ void Regressor::SetupNetwork(const string& deploy_proto,
   //CHECK_EQ(net_->num_inputs(), num_inputs_) << "Network should have exactly " << num_inputs_ << " inputs.";
   CHECK_EQ(net_->num_outputs(), 1) << "Network should have exactly one output.";
 
-  Blob<float>* input_layer = net_
+  Blob<float>* input_layer = net_->input_blobs()[0];
+
+  printf("Network image size: %d, %d\n", input_layer->wid
