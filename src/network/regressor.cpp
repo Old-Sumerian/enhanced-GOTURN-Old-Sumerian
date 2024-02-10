@@ -81,4 +81,6 @@ void Regressor::SetupNetwork(const string& deploy_proto,
   SetMean();
 }
 
-void Regressor::
+void Regressor::SetMean() {
+  // Set the mean image.
+  mean_ = cv::Mat(input_geometry_, CV_32FC3, cv::Scalar
