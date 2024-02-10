@@ -75,3 +75,4 @@ void Regressor::SetupNetwork(const string& deploy_proto,
   num_channels_ = input_layer->channels();
   CHECK(num_channels_ == 3 || num_channels_ == 1)
     << "Input layer should have 1 or 3 channels.";
+  input_geometry_ = cv::Size(input_layer->width(), input_layer->height());
