@@ -88,4 +88,6 @@ void Regressor::SetMean() {
 
 void Regressor::Init() {
   if (modified_params_ ) {
- 
+    printf("Reloading new params\n");
+    net_->CopyTrainedLayersFrom(caffe_model_);
+    mo
