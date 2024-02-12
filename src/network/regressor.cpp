@@ -95,4 +95,5 @@ void Regressor::Init() {
 }
 
 void Regressor::Regress(const cv::Mat& image_curr,
-               
+                        const cv::Mat& image, const cv::Mat& target,
+                    
