@@ -90,4 +90,9 @@ void Regressor::Init() {
   if (modified_params_ ) {
     printf("Reloading new params\n");
     net_->CopyTrainedLayersFrom(caffe_model_);
-    mo
+    modified_params_ = false;
+  }
+}
+
+void Regressor::Regress(const cv::Mat& image_curr,
+               
