@@ -99,4 +99,5 @@ void Regressor::Regress(const cv::Mat& image_curr,
                         BoundingBox* bbox) {
   assert(net_->phase() == caffe::TEST);
 
-  // Est
+  // Estimate the bounding box location of the target object in the current image.
+  std::ve
