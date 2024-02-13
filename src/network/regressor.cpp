@@ -103,4 +103,8 @@ void Regressor::Regress(const cv::Mat& image_curr,
   std::vector<float> estimation;
   Estimate(image, target, &estimation);
 
-  // Wrap the estimation in
+  // Wrap the estimation in a bounding box object.
+  *bbox = BoundingBox(estimation);
+}
+
+void Regressor::Estimate(
