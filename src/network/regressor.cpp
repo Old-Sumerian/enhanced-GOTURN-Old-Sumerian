@@ -100,4 +100,7 @@ void Regressor::Regress(const cv::Mat& image_curr,
   assert(net_->phase() == caffe::TEST);
 
   // Estimate the bounding box location of the target object in the current image.
-  std::ve
+  std::vector<float> estimation;
+  Estimate(image, target, &estimation);
+
+  // Wrap the estimation in
