@@ -107,4 +107,5 @@ void Regressor::Regress(const cv::Mat& image_curr,
   *bbox = BoundingBox(estimation);
 }
 
-void Regressor::Estimate(
+void Regressor::Estimate(const cv::Mat& image, const cv::Mat& target, std::vector<float>* output) {
+  assert(net_->pha
