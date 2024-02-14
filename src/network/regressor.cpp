@@ -108,4 +108,7 @@ void Regressor::Regress(const cv::Mat& image_curr,
 }
 
 void Regressor::Estimate(const cv::Mat& image, const cv::Mat& target, std::vector<float>* output) {
-  assert(net_->pha
+  assert(net_->phase() == caffe::TEST);
+
+  // Reshape the input blobs to be the appropriate size.
+  Bl
