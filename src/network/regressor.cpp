@@ -113,4 +113,6 @@ void Regressor::Estimate(const cv::Mat& image, const cv::Mat& target, std::vecto
   // Reshape the input blobs to be the appropriate size.
   Blob<float>* input_target = net_->input_blobs()[0];
   input_target->Reshape(1, num_channels_,
-      
+                       input_geometry_.height, input_geometry_.width);
+
+  Blob<float>* input_ima
