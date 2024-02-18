@@ -122,4 +122,8 @@ void Regressor::Estimate(const cv::Mat& image, const cv::Mat& target, std::vecto
   Blob<float>* input_bbox = net_->input_blobs()[2];
   input_bbox->Reshape(1, 4, 1, 1);
 
-  // Forward dimension
+  // Forward dimension change to all layers.
+  net_->Reshape();
+
+  // Process the inputs so we can set them.
+ 
