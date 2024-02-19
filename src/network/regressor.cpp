@@ -126,4 +126,5 @@ void Regressor::Estimate(const cv::Mat& image, const cv::Mat& target, std::vecto
   net_->Reshape();
 
   // Process the inputs so we can set them.
- 
+  std::vector<cv::Mat> target_channels;
+  std::vector<cv::Mat> image_channels;
