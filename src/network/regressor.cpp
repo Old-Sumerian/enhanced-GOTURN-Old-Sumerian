@@ -130,4 +130,6 @@ void Regressor::Estimate(const cv::Mat& image, const cv::Mat& target, std::vecto
   std::vector<cv::Mat> image_channels;
   WrapInputLayer(&target_channels, &image_channels);
 
-  // Set the inputs to
+  // Set the inputs to the network.
+  Preprocess(image, &image_channels);
+  Preprocess(target, &target_cha
