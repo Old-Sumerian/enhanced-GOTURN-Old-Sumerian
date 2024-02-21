@@ -141,4 +141,5 @@ void Regressor::Estimate(const cv::Mat& image, const cv::Mat& target, std::vecto
   GetOutput(output);
 }
 
-void Regressor::
+void Regressor::ReshapeImageInputs(const size_t num_images) {
+  // Reshape the input blobs to match the given 
