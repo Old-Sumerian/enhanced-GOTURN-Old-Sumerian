@@ -135,4 +135,10 @@ void Regressor::Estimate(const cv::Mat& image, const cv::Mat& target, std::vecto
   Preprocess(target, &target_channels);
 
   // Perform a forward-pass in the network.
-  net_->ForwardPrefill
+  net_->ForwardPrefilled();
+
+  // Get the network output.
+  GetOutput(output);
+}
+
+void Regressor::
