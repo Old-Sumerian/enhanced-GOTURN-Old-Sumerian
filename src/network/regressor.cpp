@@ -145,4 +145,7 @@ void Regressor::ReshapeImageInputs(const size_t num_images) {
   // Reshape the input blobs to match the given size and geometry.
   Blob<float>* input_target = net_->input_blobs()[0];
   input_target->Reshape(num_images, num_channels_,
-                       input_geometry_.height,
+                       input_geometry_.height, input_geometry_.width);
+
+  Blob<float>* input_image = net_->input_blobs()[1];
+  i
