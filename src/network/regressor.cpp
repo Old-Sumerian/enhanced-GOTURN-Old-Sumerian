@@ -152,4 +152,5 @@ void Regressor::ReshapeImageInputs(const size_t num_images) {
                        input_geometry_.height, input_geometry_.width);
 }
 
-void Regressor::GetFeatures(const string& feature_name, 
+void Regressor::GetFeatures(const string& feature_name, std::vector<float>* output) const {
+  //printf("Getting %s features\n", feature_
