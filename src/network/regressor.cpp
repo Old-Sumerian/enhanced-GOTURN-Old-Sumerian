@@ -149,4 +149,7 @@ void Regressor::ReshapeImageInputs(const size_t num_images) {
 
   Blob<float>* input_image = net_->input_blobs()[1];
   input_image->Reshape(num_images, num_channels_,
-                       input_geometry_.h
+                       input_geometry_.height, input_geometry_.width);
+}
+
+void Regressor::GetFeatures(const string& feature_name, 
