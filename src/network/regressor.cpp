@@ -153,4 +153,7 @@ void Regressor::ReshapeImageInputs(const size_t num_images) {
 }
 
 void Regressor::GetFeatures(const string& feature_name, std::vector<float>* output) const {
-  //printf("Getting %s features\n", feature_
+  //printf("Getting %s features\n", feature_name.c_str());
+
+  // Get a pointer to the requested layer.
+  const
