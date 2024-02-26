@@ -156,4 +156,6 @@ void Regressor::GetFeatures(const string& feature_name, std::vector<float>* outp
   //printf("Getting %s features\n", feature_name.c_str());
 
   // Get a pointer to the requested layer.
-  const
+  const boost::shared_ptr<Blob<float> > layer = net_->blob_by_name(feature_name.c_str());
+
+  // Compu
