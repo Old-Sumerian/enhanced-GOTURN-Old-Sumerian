@@ -162,4 +162,7 @@ void Regressor::GetFeatures(const string& feature_name, std::vector<float>* outp
   int num_elements = 1;
   for (int i = 0; i < layer->num_axes(); ++i) {
     const int elements_in_dim = layer->shape(i);
-    //printf("Layer %
+    //printf("Layer %d: %d\n", i, elements_in_dim);
+    num_elements *= elements_in_dim;
+  }
+  //printf("
