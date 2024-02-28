@@ -169,4 +169,8 @@ void Regressor::GetFeatures(const string& feature_name, std::vector<float>* outp
 
   // Copy all elements in this layer to a vector.
   const float* begin = layer->cpu_data();
-  const float* end = begin
+  const float* end = begin + num_elements;
+  *output = std::vector<float>(begin, end);
+}
+
+void Regressor::
