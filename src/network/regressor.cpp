@@ -173,4 +173,5 @@ void Regressor::GetFeatures(const string& feature_name, std::vector<float>* outp
   *output = std::vector<float>(begin, end);
 }
 
-void Regressor::
+void Regressor::SetImages(const std::vector<cv::Mat>& images,
+                           const st
