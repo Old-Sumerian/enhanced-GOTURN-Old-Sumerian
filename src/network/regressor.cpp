@@ -182,3 +182,6 @@ void Regressor::SetImages(const std::vector<cv::Mat>& images,
   const size_t num_images = images.size();
 
   // Set network inputs to the appropriate size and number.
+  ReshapeImageInputs(num_images);
+
+  // Wrap the network inputs with opencv object
