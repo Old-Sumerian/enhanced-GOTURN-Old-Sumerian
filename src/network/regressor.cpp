@@ -179,4 +179,6 @@ void Regressor::SetImages(const std::vector<cv::Mat>& images,
     printf("Error - %zu images but %zu targets\n", images.size(), targets.size());
   }
 
-  const siz
+  const size_t num_images = images.size();
+
+  // Set network inputs to the appropriate size and number.
