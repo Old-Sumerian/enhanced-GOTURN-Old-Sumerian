@@ -174,4 +174,6 @@ void Regressor::GetFeatures(const string& feature_name, std::vector<float>* outp
 }
 
 void Regressor::SetImages(const std::vector<cv::Mat>& images,
-                           const st
+                           const std::vector<cv::Mat>& targets) {
+  if (images.size() != targets.size()) {
+    printf("Error 
