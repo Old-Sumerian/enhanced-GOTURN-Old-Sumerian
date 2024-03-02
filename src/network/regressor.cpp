@@ -186,4 +186,5 @@ void Regressor::SetImages(const std::vector<cv::Mat>& images,
 
   // Wrap the network inputs with opencv objects.
   std::vector<std::vector<cv::Mat> > target_channels;
-  std::vector<std::v
+  std::vector<std::vector<cv::Mat> > image_channels;
+  WrapInputLayer(num_images, &target_ch
