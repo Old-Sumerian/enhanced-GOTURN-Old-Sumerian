@@ -194,4 +194,5 @@ void Regressor::SetImages(const std::vector<cv::Mat>& images,
   Preprocess(targets, &target_channels);
 }
 
-void Regressor::Es
+void Regressor::Estimate(const std::vector<cv::Mat>& images,
+                        const std::vector<cv:
