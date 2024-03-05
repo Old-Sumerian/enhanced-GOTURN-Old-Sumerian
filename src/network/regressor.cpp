@@ -197,4 +197,7 @@ void Regressor::SetImages(const std::vector<cv::Mat>& images,
 void Regressor::Estimate(const std::vector<cv::Mat>& images,
                         const std::vector<cv::Mat>& targets,
                         std::vector<float>* output) {
- 
+  assert(net_->phase() == caffe::TEST);
+
+  // Set the inputs to the network.
+  SetImages(ima
