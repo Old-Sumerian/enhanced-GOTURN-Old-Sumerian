@@ -203,4 +203,7 @@ void Regressor::Estimate(const std::vector<cv::Mat>& images,
   SetImages(images, targets);
 
   // Forward dimension change to all layers.
-  net_->Resh
+  net_->Reshape();
+
+  // Perform a forward-pass in the network.
+  net_->ForwardPref
