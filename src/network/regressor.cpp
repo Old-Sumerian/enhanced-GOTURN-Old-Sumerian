@@ -206,4 +206,10 @@ void Regressor::Estimate(const std::vector<cv::Mat>& images,
   net_->Reshape();
 
   // Perform a forward-pass in the network.
-  net_->ForwardPref
+  net_->ForwardPrefilled();
+
+  // Get the network output.
+  GetOutput(output);
+}
+
+void Regressor::GetO
