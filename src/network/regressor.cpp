@@ -200,4 +200,7 @@ void Regressor::Estimate(const std::vector<cv::Mat>& images,
   assert(net_->phase() == caffe::TEST);
 
   // Set the inputs to the network.
-  SetImages(ima
+  SetImages(images, targets);
+
+  // Forward dimension change to all layers.
+  net_->Resh
