@@ -212,4 +212,5 @@ void Regressor::Estimate(const std::vector<cv::Mat>& images,
   GetOutput(output);
 }
 
-void Regressor::GetO
+void Regressor::GetOutput(std::vector<float>* output) {
+  // Get the fc8 output features of the ne
