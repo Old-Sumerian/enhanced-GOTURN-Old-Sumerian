@@ -215,3 +215,7 @@ void Regressor::Estimate(const std::vector<cv::Mat>& images,
 void Regressor::GetOutput(std::vector<float>* output) {
   // Get the fc8 output features of the network (this contains the estimated bounding box).
   GetFeatures("fc8", output);
+}
+
+// Wrap the input layer of the network in separate cv::Mat objects
+// (one per channel).
