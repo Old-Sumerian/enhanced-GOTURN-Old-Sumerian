@@ -218,4 +218,5 @@ void Regressor::GetOutput(std::vector<float>* output) {
 }
 
 // Wrap the input layer of the network in separate cv::Mat objects
-// (one per channel).
+// (one per channel). This way we save one memcpy operation and we
+// don't need to rely on cudaMem
