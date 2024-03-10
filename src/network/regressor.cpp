@@ -223,4 +223,7 @@ void Regressor::GetOutput(std::vector<float>* output) {
 // operation will write the separate channels directly to the input
 // layer.
 void Regressor::WrapInputLayer(std::vector<cv::Mat>* target_channels, std::vector<cv::Mat>* image_channels) {
-  Blob<float>* input_layer_target = net_->input_blobs()[0
+  Blob<float>* input_layer_target = net_->input_blobs()[0];
+  Blob<float>* input_layer_image = net_->input_blobs()[1];
+
+  int target_width = 
