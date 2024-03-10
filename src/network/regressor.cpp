@@ -226,4 +226,5 @@ void Regressor::WrapInputLayer(std::vector<cv::Mat>* target_channels, std::vecto
   Blob<float>* input_layer_target = net_->input_blobs()[0];
   Blob<float>* input_layer_image = net_->input_blobs()[1];
 
-  int target_width = 
+  int target_width = input_layer_target->width();
+  int target_height = input_layer_target->height();
