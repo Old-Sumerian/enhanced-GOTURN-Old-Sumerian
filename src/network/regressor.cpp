@@ -235,4 +235,6 @@ void Regressor::WrapInputLayer(std::vector<cv::Mat>* target_channels, std::vecto
     target_data += target_width * target_height;
   }
 
-  int image_width = input_layer_image->
+  int image_width = input_layer_image->width();
+  int image_height = input_layer_image->height();
+  float* image_data 
