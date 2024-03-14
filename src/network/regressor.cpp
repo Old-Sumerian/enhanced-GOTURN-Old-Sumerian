@@ -244,3 +244,6 @@ void Regressor::WrapInputLayer(std::vector<cv::Mat>* target_channels, std::vecto
     image_data += image_width * image_height;
   }
 }
+
+// Wrap the input layer of the network in separate cv::Mat objects
+// (one per channel). This way
