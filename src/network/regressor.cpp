@@ -249,3 +249,6 @@ void Regressor::WrapInputLayer(std::vector<cv::Mat>* target_channels, std::vecto
 // (one per channel). This way we save one memcpy operation and we
 // don't need to rely on cudaMemcpy2D. The last preprocessing
 // operation will write the separate channels directly to the input
+// layer.
+void Regressor::WrapInputLayer(const size_t num_images,
+                   
