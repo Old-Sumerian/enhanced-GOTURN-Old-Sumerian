@@ -251,4 +251,5 @@ void Regressor::WrapInputLayer(std::vector<cv::Mat>* target_channels, std::vecto
 // operation will write the separate channels directly to the input
 // layer.
 void Regressor::WrapInputLayer(const size_t num_images,
-                   
+                               std::vector<std::vector<cv::Mat> >* target_channels,
+      
