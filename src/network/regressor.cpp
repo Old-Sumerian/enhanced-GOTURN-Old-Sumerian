@@ -252,4 +252,6 @@ void Regressor::WrapInputLayer(std::vector<cv::Mat>* target_channels, std::vecto
 // layer.
 void Regressor::WrapInputLayer(const size_t num_images,
                                std::vector<std::vector<cv::Mat> >* target_channels,
-                               std::vector<std::vector<cv::Mat> >* image_channels
+                               std::vector<std::vector<cv::Mat> >* image_channels) {
+  Blob<float>* input_layer_target = net_->input_blobs()[0];
+  Blob<float>* input_layer_imag
