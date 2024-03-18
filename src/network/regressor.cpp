@@ -257,4 +257,7 @@ void Regressor::WrapInputLayer(const size_t num_images,
   Blob<float>* input_layer_image = net_->input_blobs()[1];
 
   image_channels->resize(num_images);
-  target_channels->resize(
+  target_channels->resize(num_images);
+
+  int target_width = input_layer_target->width();
+  int target
