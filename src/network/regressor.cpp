@@ -260,4 +260,5 @@ void Regressor::WrapInputLayer(const size_t num_images,
   target_channels->resize(num_images);
 
   int target_width = input_layer_target->width();
-  int target
+  int target_height = input_layer_target->height();
+  float* target_data = input_layer_target->mut
