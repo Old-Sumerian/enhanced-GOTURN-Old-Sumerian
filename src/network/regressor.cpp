@@ -272,4 +272,6 @@ void Regressor::WrapInputLayer(const size_t num_images,
 
   int image_width = input_layer_image->width();
   int image_height = input_layer_image->height();
-  float* image_data = input_l
+  float* image_data = input_layer_image->mutable_cpu_data();
+  for (int n = 0; n < num_images; ++n) {
+  
