@@ -276,4 +276,10 @@ void Regressor::WrapInputLayer(const size_t num_images,
   for (int n = 0; n < num_images; ++n) {
     for (int i = 0; i < input_layer_image->channels(); ++i) {
       cv::Mat channel(image_height, image_width, CV_32FC1, image_data);
-      (*image_channels)[
+      (*image_channels)[n].push_back(channel);
+      image_data += image_width * image_height;
+    }
+  }
+}
+
+void Regressor
