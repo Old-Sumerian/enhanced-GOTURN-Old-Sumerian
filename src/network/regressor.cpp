@@ -282,4 +282,6 @@ void Regressor::WrapInputLayer(const size_t num_images,
   }
 }
 
-void Regressor
+void Regressor::Preprocess(const cv::Mat& img,
+                            std::vector<cv::Mat>* input_channels) {
+ 
