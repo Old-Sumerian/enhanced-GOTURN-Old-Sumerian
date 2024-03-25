@@ -292,4 +292,5 @@ void Regressor::Preprocess(const cv::Mat& img,
     cv::cvtColor(img, sample, CV_BGRA2GRAY);
   else if (img.channels() == 4 && num_channels_ == 3)
     cv::cvtColor(img, sample, CV_BGRA2BGR);
-  else if (img.ch
+  else if (img.channels() == 1 && num_channels_ == 3)
+    cv::cvtColor(img, sample, CV_GRAY2
