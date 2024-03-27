@@ -305,4 +305,6 @@ void Regressor::Preprocess(const cv::Mat& img,
     sample_resized = sample;
 
   // Convert the input image to the expected number of channels.
-  cv::M
+  cv::Mat sample_float;
+  if (num_channels_ == 3)
+    sample_resized.convertTo(sample_float, CV_32FC3
