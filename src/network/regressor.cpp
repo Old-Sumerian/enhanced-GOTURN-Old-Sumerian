@@ -304,4 +304,5 @@ void Regressor::Preprocess(const cv::Mat& img,
   else
     sample_resized = sample;
 
-  // 
+  // Convert the input image to the expected number of channels.
+  cv::M
