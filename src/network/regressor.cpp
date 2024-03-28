@@ -312,4 +312,7 @@ void Regressor::Preprocess(const cv::Mat& img,
     sample_resized.convertTo(sample_float, CV_32FC1);
 
   // Subtract the image mean to try to make the input 0-mean.
-  cv::Mat sample_normalized
+  cv::Mat sample_normalized;
+  cv::subtract(sample_float, mean_, sample_normalized);
+
+  // This operation will w
