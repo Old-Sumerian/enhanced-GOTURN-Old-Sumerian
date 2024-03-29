@@ -315,4 +315,5 @@ void Regressor::Preprocess(const cv::Mat& img,
   cv::Mat sample_normalized;
   cv::subtract(sample_float, mean_, sample_normalized);
 
-  // This operation will w
+  // This operation will write the separate BGR planes directly to the
+  // input layer of the network be
