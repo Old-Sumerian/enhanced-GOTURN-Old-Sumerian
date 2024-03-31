@@ -320,4 +320,6 @@ void Regressor::Preprocess(const cv::Mat& img,
   // objects in input_channels.
   cv::split(sample_normalized, *input_channels);
 
-  /*CHECK(reinterpret_c
+  /*CHECK(reinterpret_cast<float*>(input_channels->at(0).data)
+        == net_->input_blobs()[0]->cpu_data())
+    << "Input
