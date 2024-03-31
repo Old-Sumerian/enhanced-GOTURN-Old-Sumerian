@@ -325,4 +325,5 @@ void Regressor::Preprocess(const cv::Mat& img,
     << "Input channels are not wrapping the input layer of the network.";*/
 }
 
-void Regressor::Prepro
+void Regressor::Preprocess(const std::vector<cv::Mat>& images,
+                      
