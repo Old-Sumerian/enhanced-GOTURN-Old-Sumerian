@@ -322,4 +322,7 @@ void Regressor::Preprocess(const cv::Mat& img,
 
   /*CHECK(reinterpret_cast<float*>(input_channels->at(0).data)
         == net_->input_blobs()[0]->cpu_data())
-    << "Input
+    << "Input channels are not wrapping the input layer of the network.";*/
+}
+
+void Regressor::Prepro
