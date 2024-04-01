@@ -327,4 +327,7 @@ void Regressor::Preprocess(const cv::Mat& img,
 
 void Regressor::Preprocess(const std::vector<cv::Mat>& images,
                            std::vector<std::vector<cv::Mat> >* input_channels) {
-  for (size_t i = 0; i
+  for (size_t i = 0; i < images.size(); ++i) {
+    const cv::Mat& img = images[i];
+
+    // Convert the i
