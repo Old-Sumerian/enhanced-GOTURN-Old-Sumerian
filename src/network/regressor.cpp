@@ -330,4 +330,5 @@ void Regressor::Preprocess(const std::vector<cv::Mat>& images,
   for (size_t i = 0; i < images.size(); ++i) {
     const cv::Mat& img = images[i];
 
-    // Convert the i
+    // Convert the input image to the input image format of the network.
+    cv::Mat sample
