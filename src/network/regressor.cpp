@@ -333,4 +333,6 @@ void Regressor::Preprocess(const std::vector<cv::Mat>& images,
     // Convert the input image to the input image format of the network.
     cv::Mat sample;
     if (img.channels() == 3 && num_channels_ == 1)
-      cv::cvtColor(img, sample, CV
+      cv::cvtColor(img, sample, CV_BGR2GRAY);
+    else if (img.channels() == 4 && num_channels_ == 1)
+  
