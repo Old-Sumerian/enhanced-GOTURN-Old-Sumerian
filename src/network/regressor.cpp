@@ -344,4 +344,6 @@ void Regressor::Preprocess(const std::vector<cv::Mat>& images,
       sample = img;
 
     // Convert the input image to the expected size.
-  
+    cv::Mat sample_resized;
+    if (sample.size() != input_geometry_)
+      cv:
