@@ -341,4 +341,7 @@ void Regressor::Preprocess(const std::vector<cv::Mat>& images,
     else if (img.channels() == 1 && num_channels_ == 3)
       cv::cvtColor(img, sample, CV_GRAY2BGR);
     else
-      sample =
+      sample = img;
+
+    // Convert the input image to the expected size.
+  
