@@ -353,4 +353,8 @@ void Regressor::Preprocess(const std::vector<cv::Mat>& images,
     // Convert the input image to the expected number of channels.
     cv::Mat sample_float;
     if (num_channels_ == 3)
-      sample_resized.convertTo(sample_float, CV_32FC
+      sample_resized.convertTo(sample_float, CV_32FC3);
+    else
+      sample_resized.convertTo(sample_float, CV_32FC1);
+
+    // Sub
