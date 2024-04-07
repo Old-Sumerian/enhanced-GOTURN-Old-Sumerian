@@ -357,4 +357,5 @@ void Regressor::Preprocess(const std::vector<cv::Mat>& images,
     else
       sample_resized.convertTo(sample_float, CV_32FC1);
 
-    // Sub
+    // Subtract the image mean to try to make the input 0-mean.
+    cv::Mat sample_normali
