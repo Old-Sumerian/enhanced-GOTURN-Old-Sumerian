@@ -366,4 +366,5 @@ void Regressor::Preprocess(const std::vector<cv::Mat>& images,
     // objects in input_channels.
     cv::split(sample_normalized, (*input_channels)[i]);
 
-    /*CHECK(reinterpret_
+    /*CHECK(reinterpret_cast<float*>(input_channels->at(0).data)
+          == net_->input_blobs()[0]->cpu_data()
