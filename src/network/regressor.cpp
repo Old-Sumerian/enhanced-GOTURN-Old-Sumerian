@@ -364,4 +364,6 @@ void Regressor::Preprocess(const std::vector<cv::Mat>& images,
     // This operation will write the separate BGR planes directly to the
     // input layer of the network because it is wrapped by the cv::Mat
     // objects in input_channels.
- 
+    cv::split(sample_normalized, (*input_channels)[i]);
+
+    /*CHECK(reinterpret_
