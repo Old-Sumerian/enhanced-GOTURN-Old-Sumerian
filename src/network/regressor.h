@@ -83,3 +83,33 @@ protected:
   // Set up a network with the architecture specified in deploy_proto,
   // with the model weights saved in caffe_model.
   void SetupNetwork(const std::string& deploy_proto,
+                    const std::string& caffe_model,
+                    const int gpu_id,
+                    const bool do_train);
+
+  // Set the mean input (used to normalize the inputs to be 0-mean).
+  void SetMean();
+
+ private:
+
+  // Number of inputs expected by the network.
+  // 代表输入的图像有几幅，一般为两幅，一个是current frame一个是previous frame
+  int num_inputs_;
+
+  // Size of the input images.
+  cv::Size input_geometry_;
+
+  // Number of image channels: normally either 1 (black and white) or 3 (color).
+  int num_channels_;
+
+  // Mean image, used to make the input 0-mean.
+  cv::Mat mean_;
+
+  // Folder containing the model parameters.
+  std::string caffe_model_;
+
+  // Whether the model weights has been modified.
+  bool modified_params_;
+};
+
+#endif // REGRESSOR_H
