@@ -87,3 +87,11 @@ void Tracker::ShowTracking(const cv::Mat& target_pad, const cv::Mat& curr_search
   bbox_estimate.Unscale(image_resize, &bbox_estimate_unscaled);
 
   // Show the tracking estimate on the image.
+  cv::Mat image_with_box;
+  image_resize.copyTo(image_with_box);
+  bbox_estimate_unscaled.DrawBoundingBox(&image_with_box);
+
+  cv::namedWindow("Estimate", cv::WINDOW_AUTOSIZE );// Create a window for display.
+  cv::imshow("Estimate", image_with_box );                   // Show our image inside it.
+  cv::waitKey(0);
+}
