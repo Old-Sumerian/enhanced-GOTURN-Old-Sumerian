@@ -11,4 +11,6 @@
 class Tracker
 {
 public:
-  Tracker(const
+  Tracker(const bool show_tracking);
+
+  // Estimate the location of the target object in the 
