@@ -6,3 +6,9 @@
 #include <opencv2/highgui/highgui.hpp>
 
 #include "helper/bounding_box.h"
+#include "network/regressor.h"
+
+class Tracker
+{
+public:
+  Tracker(const
