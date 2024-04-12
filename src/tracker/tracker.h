@@ -20,4 +20,5 @@ public:
 
 
   // Initialize the tracker with the ground-truth bounding box of the first frame.
-  void Init(const
+  void Init(const cv::Mat& image_curr, const BoundingBox& bbox_gt,
+            Regresso
