@@ -19,4 +19,5 @@ public:
 
 
 
-  // Initialize th
+  // Initialize the tracker with the ground-truth bounding box of the first frame.
+  void Init(const
