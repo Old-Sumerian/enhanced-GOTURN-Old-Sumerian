@@ -14,4 +14,9 @@ public:
   Tracker(const bool show_tracking);
 
   // Estimate the location of the target object in the current image.
-  virtual void Track(const cv::Mat& image_curr, RegressorBase* regres
+  virtual void Track(const cv::Mat& image_curr, RegressorBase* regressor,
+             BoundingBox* bbox_estimate_uncentered);
+
+
+
+  // Initialize th
