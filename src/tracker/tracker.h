@@ -13,4 +13,5 @@ class Tracker
 public:
   Tracker(const bool show_tracking);
 
-  // Estimate the location of the target object in the 
+  // Estimate the location of the target object in the current image.
+  virtual void Track(const cv::Mat& image_curr, RegressorBase* regres
