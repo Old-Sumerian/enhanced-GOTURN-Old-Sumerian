@@ -23,4 +23,5 @@ public:
   void Init(const cv::Mat& image_curr, const BoundingBox& bbox_gt,
             RegressorBase* regressor);
 
-  // Initialize the tracker with the ground-truth bounding box of 
+  // Initialize the tracker with the ground-truth bounding box of the first frame.
+  // VOTRegion is an object for initializing the tracker when using t
