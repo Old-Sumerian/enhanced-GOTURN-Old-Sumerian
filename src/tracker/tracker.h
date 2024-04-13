@@ -24,4 +24,8 @@ public:
             RegressorBase* regressor);
 
   // Initialize the tracker with the ground-truth bounding box of the first frame.
-  // VOTRegion is an object for initializing the tracker when using t
+  // VOTRegion is an object for initializing the tracker when using the VOT Tracking dataset.
+
+
+private:
+  // Show the tracking output, for debuggi
