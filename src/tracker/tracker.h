@@ -28,4 +28,5 @@ public:
 
 
 private:
-  // Show the tracking output, for debuggi
+  // Show the tracking output, for debugging.
+  void ShowTracking(const cv::Mat& target_pad, const cv::Mat& curr_s
