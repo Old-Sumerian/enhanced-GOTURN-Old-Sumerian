@@ -29,4 +29,6 @@ public:
 
 private:
   // Show the tracking output, for debugging.
-  void ShowTracking(const cv::Mat& target_pad, const cv::Mat& curr_s
+  void ShowTracking(const cv::Mat& target_pad, const cv::Mat& curr_search_region, const BoundingBox& bbox_estimate) const;
+
+  // Predicted p
