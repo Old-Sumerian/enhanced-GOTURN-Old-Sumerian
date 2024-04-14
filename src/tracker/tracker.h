@@ -31,4 +31,5 @@ private:
   // Show the tracking output, for debugging.
   void ShowTracking(const cv::Mat& target_pad, const cv::Mat& curr_search_region, const BoundingBox& bbox_estimate) const;
 
-  // Predicted p
+  // Predicted prior location of the target object in the current image.
+  // This should be a tight (high-confidence)
