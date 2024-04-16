@@ -34,4 +34,7 @@ private:
   // Predicted prior location of the target object in the current image.
   // This should be a tight (high-confidence) prior prediction area.  We will
   // add padding to this region.
-  BoundingBox bbox_curr_prior_tig
+  BoundingBox bbox_curr_prior_tight_;
+
+  // Estimated previous location of the target object.
+  BoundingBox 
