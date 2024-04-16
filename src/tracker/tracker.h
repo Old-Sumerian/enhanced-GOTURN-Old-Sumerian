@@ -32,4 +32,6 @@ private:
   void ShowTracking(const cv::Mat& target_pad, const cv::Mat& curr_search_region, const BoundingBox& bbox_estimate) const;
 
   // Predicted prior location of the target object in the current image.
-  // This should be a tight (high-confidence)
+  // This should be a tight (high-confidence) prior prediction area.  We will
+  // add padding to this region.
+  BoundingBox bbox_curr_prior_tig
