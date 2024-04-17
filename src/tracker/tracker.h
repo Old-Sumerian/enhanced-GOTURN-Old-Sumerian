@@ -37,4 +37,9 @@ private:
   BoundingBox bbox_curr_prior_tight_;
 
   // Estimated previous location of the target object.
-  BoundingBox 
+  BoundingBox bbox_prev_tight_;
+
+  // Full previous image.
+  cv::Mat image_prev_;
+
+  // Whether
