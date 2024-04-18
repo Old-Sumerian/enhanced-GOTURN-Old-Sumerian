@@ -68,3 +68,41 @@ int main(int argc, char *argv[]){
         for(int frame_num = 1; frame_num < video.all_frames_.size(); ++frame_num ){
 
             // Get image for the current frame.
+            // (The ground-truth bounding box is used only for visualization).
+
+
+            const string& image_file = video.video_name_ + "/" + video.all_frames_[frame_num];
+            image_curr = cv::imread(image_file);
+
+            // Track and estimate the target's bounding box location in the current image.
+            // Important: this method cannot receive bbox_gt (the ground-truth bounding box) as an input.
+            BoundingBox bbox_estimate_uncentered;
+            tracker.Track(image_curr, &regressor, &bbox_estimate_uncentered);
+
+            targetBox.x = (int)bbox_estimate_uncentered.x1_;
+            targetBox.y = (int)bbox_estimate_uncentered.y1_;
+            targetBox.width = (int)bbox_estimate_uncentered.x2_ - targetBox.x;
+            targetBox.height = (int)bbox_estimate_uncentered.y2_ - targetBox.y;
+
+            cv::Mat display;
+            image_curr.copyTo(display);
+            cv::rectangle(display,targetBox,CV_RGB(255,0,0), 2);
+            cv::imshow("tracking out",display);
+
+//            outVideo.operator<<(display);
+
+//            std::cout<<image_file<<std::endl;
+//            printf("x1: %.0f  y1: %.0f "
+//                           "x2: %.0f  y2: %.0f \n",
+//                   bbox_estimate_uncentered.x1_,bbox_estimate_uncentered.y1_,
+//                   bbox_estimate_uncentered.x2_,bbox_estimate_uncentered.y2_);
+            cv::waitKey(1);
+        }
+
+        cv::destroyAllWindows();
+
+    }
+
+    return 0;
+
+}
