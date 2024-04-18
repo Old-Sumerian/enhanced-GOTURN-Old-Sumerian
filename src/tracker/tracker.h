@@ -42,4 +42,8 @@ private:
   // Full previous image.
   cv::Mat image_prev_;
 
-  // Whether
+  // Whether to visualize the tracking results
+  bool show_tracking_;
+};
+
+#endif // TRACKER_H
