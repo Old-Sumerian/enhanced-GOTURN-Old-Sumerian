@@ -6,4 +6,4 @@
 
 The original work, GOTURN, was presented in the following paper:
 
-**[
+**[Learning to Track at 100 FPS with Deep Regression Networks](http://davheld.github.io/GOTURN/GOTUR
