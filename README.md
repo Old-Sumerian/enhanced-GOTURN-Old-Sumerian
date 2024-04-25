@@ -10,4 +10,9 @@ The original work, GOTURN, was presented in the following paper:
 <br>
 [David Held](http://davheld.github.io/),
 [Sebastian Thrun](http://robots.stanford.edu/),
-[Silvio Savarese](http://cvgl.stanford.ed
+[Silvio Savarese](http://cvgl.stanford.edu/silvio/),
+<br>
+European Conference on Computer Vision (ECCV), 2016 (In press)
+
+
+## 
