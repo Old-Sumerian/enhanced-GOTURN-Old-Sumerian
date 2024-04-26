@@ -26,4 +26,6 @@ sudo apt-get install cmake
 
 * Install Caffe and compile using the CMake build instructions:
 http://caffe.berkeleyvision.org/installation.html
-It is necessary to compile caffe using cmake, 
+It is necessary to compile caffe using cmake, as without it, this project cannot locate the required caffe.
+
+* Install O
