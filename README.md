@@ -15,4 +15,10 @@ The original work, GOTURN, was presented in the following paper:
 European Conference on Computer Vision (ECCV), 2016 (In press)
 
 
-## 
+## Installation
+
+### Install dependencies:
+
+* Install CMake:
+```
+sudo apt-get install cma
