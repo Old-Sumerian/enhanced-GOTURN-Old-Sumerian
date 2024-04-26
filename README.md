@@ -21,4 +21,8 @@ European Conference on Computer Vision (ECCV), 2016 (In press)
 
 * Install CMake:
 ```
-sudo apt-get install cma
+sudo apt-get install cmake
+```
+
+* Install Caffe and compile using the CMake build instructions:
+http://caffe.berke
