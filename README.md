@@ -25,4 +25,5 @@ sudo apt-get install cmake
 ```
 
 * Install Caffe and compile using the CMake build instructions:
-http://caffe.berke
+http://caffe.berkeleyvision.org/installation.html
+It is necessary to compile caffe using cmake, 
