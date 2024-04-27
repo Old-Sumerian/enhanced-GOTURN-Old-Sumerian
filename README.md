@@ -28,4 +28,8 @@ sudo apt-get install cmake
 http://caffe.berkeleyvision.org/installation.html
 It is necessary to compile caffe using cmake, as without it, this project cannot locate the required caffe.
 
-* Install O
+* Install OpenCV
+```
+sudo apt-get install libopencv-dev
+```
+If you have already installed opencv, a
