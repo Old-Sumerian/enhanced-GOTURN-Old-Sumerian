@@ -39,4 +39,7 @@ If you have already installed opencv, avoid executing this step.
 
 From the main directory, follow these steps:
 
-Open CMakeLists.txt, and change `set(Caffe_DIR your_caffe_folder)`, for example, mine is `set(C
+Open CMakeLists.txt, and change `set(Caffe_DIR your_caffe_folder)`, for example, mine is `set(Caffe_DIR ~/tracking/GOTURN/caffe)`
+
+then run the following commands:
+``
