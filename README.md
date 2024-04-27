@@ -32,4 +32,9 @@ It is necessary to compile caffe using cmake, as without it, this project cannot
 ```
 sudo apt-get install libopencv-dev
 ```
-If you have already installed opencv, a
+If you have already installed opencv, avoid executing this step.
+
+
+### Compile
+
+From the main directory, follow these steps:
