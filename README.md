@@ -42,4 +42,13 @@ From the main directory, follow these steps:
 Open CMakeLists.txt, and change `set(Caffe_DIR your_caffe_folder)`, for example, mine is `set(Caffe_DIR ~/tracking/GOTURN/caffe)`
 
 then run the following commands:
-``
+```
+mkdir build
+cd build
+cmake ..
+make
+```
+
+## Pretrained model
+
+To download a pretrain
