@@ -57,4 +57,10 @@ To download a pretrained tracker model (434 MB), run the following script from t
 bash scripts/download_trained_model.sh
 ```
 
-## Test your ow
+## Test your own video
+
+To test on your own video, run the following script:
+
+```
+bash scripts/runTracker.sh
+```
