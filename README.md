@@ -51,4 +51,10 @@ make
 
 ## Pretrained model
 
-To download a pretrained tracker model (434 MB), run the following script from the m
+To download a pretrained tracker model (434 MB), run the following script from the main directory:
+
+```
+bash scripts/download_trained_model.sh
+```
+
+## Test your ow
