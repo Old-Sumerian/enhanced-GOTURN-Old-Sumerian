@@ -51,4 +51,4 @@ make
 
 ## Pretrained model
 
-To download a pretrain
+To download a pretrained tracker model (434 MB), run the following script from the m
